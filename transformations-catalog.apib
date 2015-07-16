@@ -1,0 +1,270 @@
+# Group Transformations Catalog
+
+
+## List all Transformations [/catalog/transformations/catalog]
+
+List of transformations  records using the DCAT vocabulary in RDF or JSON-LD.
+
+Use the **showShared** header parameter to include the public transformations.
+
++ Parameters
+    + showShared: (optional, y|n) - defaults to `n`
+    + Accept: (required, mimetype) - 
+      ```application/ld+json``` or ```application/rdf+xml```
+
+### List users's transformations [GET]
+
++ Request
+    + Headers
+        Accept: application/ld+json
+        Authorization: Basic YXBpa2V5OmFwaXBhc3M=
+        showShared: n
+
++ Response 200
+
+    {
+        "@context": { ... }
+        "@type": "dcat:Catalog",
+        "@id": "http://dapaas.eu/users/dapaas/catalog",
+        "dct:publisher": "dapaas",
+        "dcat:record": [
+            {
+                "@type": "dcat:CatalogRecord",
+                "foaf:primaryTopic": "http://eu.dapaas/transformation/1",
+                "dct:issued": "2014-09-16",
+                "dct:modified": "2014-09-17",
+                "dct:title": "My first DaPaaS transformation",
+                "dcat:public: "true",
+                "dct:publisher": "dapaas"
+            },
+            {
+                "@type": "dcat:CatalogRecord",
+                "foaf:primaryTopic": "http://eu.dapaas/transformation/2",
+                "dct:issued": "2014-09-15",
+                "dct:modified": "2014-09-17",
+                "dct:title": "My second DaPaaS transformation",
+                "dcat:public: "false",
+                "dct:publisher": "dapaas"
+            }
+        ]
+    }
+
+## Search transformations [/catalog/transformations/search]
+
+Text search on the transformations metadata.
+
+Use the **showShared** header parameter to include the public transformations.
+
++ Parameters
+    + q: (required, text) - The text query  
+    + showShared: (optional, y|n) - defaults to `n`
+    + Accept: (required, mimetype) - 
+      ```application/ld+json``` or ```application/rdf+xml```
+
+### Search users's transformations [GET]
++ Request
+    + Headers
+        Accept: application/ld+json
+        Authorization: Basic YXBpa2V5OmFwaXBhc3M=
+        showShared: n
+        q: DaPaaS
+
++ Response 200
+
+    {
+        "@context": { ... }
+        "@type": "dcat:Catalog",
+        "@id": "http://dapaas.eu/users/dapaas/catalog",
+        "dct:publisher": "dapaas",
+        "dcat:record": [
+            {
+                "@type": "dcat:CatalogRecord",
+                "foaf:primaryTopic": "http://eu.dapaas/transformation/1",
+                "dct:issued": "2014-09-16",
+                "dct:modified": "2014-09-17",
+                "dct:title": "My first DaPaaS transformation",
+                "dcat:public: "true",
+                "dct:publisher": "dapaas"
+            },
+            {
+                "@type": "dcat:CatalogRecord",
+                "foaf:primaryTopic": "http://eu.dapaas/transformation/2",
+                "dct:issued": "2014-09-15",
+                "dct:modified": "2014-09-17",
+                "dct:title": "My second DaPaaS transformation",
+                "dcat:public: "false",
+                "dct:publisher": "dapaas"
+            }
+        ]
+    }
+
+## Transformation CRUD [/catalog/transformations]
+
+### Create Transformation [POST]
+
+A successfull creation returns the URI of the new transformation.
+
+If the description contains no `@id`, the system will generate one from the title.
+
+Note: only new transformations are created with this method. Any subsequent calls with the same data generates an error response.
+
+**Attachments**
+
+**meta:**  Transformation metadata as RDF or JSON-LD.
+
+Use `Content-Type` to determine the metadata-format.
+
+If the metadata doesn't contain a distirbution id, the system will generate one.
+
+**tr-clojure:** The code of the transformation as Grafter Clojure.
+
++ Parameters
+    + Content%2DType: (required, mimetype) - 
+      ```multipart/mixed``` or ```multipart/form-data```
+
+
++ Request
+    + Headers
+        Authorization: Basic YXBpa2V5OmFwaXBhc3M=
+    + Body
+
+        meta (application/ld+json):  {
+            '@context': {...},
+            '@type': 'dcat:Transformation',
+            'dct:title': 'My new transformation',
+            'dct:description': 'Example transformation for the documentation',
+            'dcat:public': 'false',
+            'dct:modified': '2014-09-17',
+            'dcat:transformationType': 'pipe',
+            'dcat:transformationCommand': 'my-pipe'
+        },
+        tr-clojure: "<clojure source code>"
+
++ Response 200
+
+    {
+        "@id": "http://dapaas.eu/users/15052/transformation/my-new-transformation-1"
+    }
+
+
+### Read Transformation [GET]
+
+Get the complete transformation description using the DCAT vocabulary in RDF or JSON-LD.
+
++ Parameters
+    + transformation%2Did: (required, URI)
+        URI of the transformation, taken from the catalog
+    + Accept: (required, mimetype) - 
+      ```application/ld+json``` or ```application/rdf+xml```
+
++ Request
+    + Headers
+        Accept: application/ld+json
+        Authorization: Basic YXBpa2V5OmFwaXBhc3M=
+        transformation-id: http://dapaas.eu/users/15052/transformation/my-new-transformation-1
+
++ Response 200
+
+    {
+        "@context": {...},
+        "@id": "http://dapaas.eu/users/15052/transformation/my-new-transformation-1",
+        "@type": "dcat:Transformation",
+        "dct:public": false,
+        "dct:publisher": "dapaas",
+        "dct:title": "My new transformation",
+        "dcat:keyword": [],
+        "dct:description": "Example transformation for the documentation",
+        "dct:clojureDataID": "a959cdca-8a49-4a10-bba0-98dc59083246.clj",
+        "dct:jsonDataID": "2184a1bc-b0b7-450c-b839-9e74be065e77.json",
+        "dct:modified: "2015-07-15",
+        "http://www.w3.org/ns/dcat#transformationCommand": "my-pipe",
+        "http://www.w3.org/ns/dcat#transformationType": "pipe"
+    }
+
+
+### Update Transformation [PUT]
+
+
+**Attachments**
+
+**meta:**  Optional transformation metadata as RDF or JSON-LD.
+
+Use `Content-Type` to determine the metadata-format.
+
+Note: The complete transformation metadata should be included. It is not merged with the previous version.
+
+**tr-clojure:** Optional code of the transformation as Grafter Clojure.
+
+meta and tr-clojure cand be managed separately.
+
++ Parameters
+    + Content%2DType: (required, mimetype) - 
+      ```multipart/mixed``` or ```multipart/form-data```
+    + transformation%2Did: (required, URI)
+        URI of the transformation, taken from the catalog
+
+
++ Request
+    + Headers
+        Authorization: Basic YXBpa2V5OmFwaXBhc3M=
+        transformation-id: http://dapaas.eu/users/15052/transformation/my-new-transformation-1
+    + Body
+
+        meta (application/ld+json):  {
+            '@context': {...},
+            '@type': 'dcat:Transformation',
+            'dct:title': 'My new transformation',
+            'dct:description': 'Updated transformation',
+            'dcat:public': 'false',
+            'dct:modified': '2014-09-17',
+            'dcat:transformationType': 'pipe',
+            'dcat:transformationCommand': 'my-pipe'
+        },
+        tr-clojure: "<clojure source code>"
+
++ Response 200
+
+### Delete Transformation [DELETE]
+
+
++ Parameters
+    + transformation%2Did: (required, URI)
+        URI of the transformation, taken from the catalog
+
++ Request
+    + Headers
+        Authorization: Basic YXBpa2V5OmFwaXBhc3M=
+        transformation-id: http://dapaas.eu/users/15052/transformation/my-new-transformation-1
+
++ Response 200
+
+## Distribution Clojure code [/catalog/distributions/code/clojure]
+
+The transformation code consists of clojure using [the Grafter API](http://api.grafter.org/0.4.0/grafter.tabular.html).
+
+### Retrieve Clojure code [GET]
+
++ Parameters
+    + transformation%2Did: (required, URI)
+        URI of the transformation
+
++ Request
+    + Headers
+        Authorization: Basic YXBpa2V5OmFwaXBhc3M=
+        transformation-id: http://dapaas.eu/users/15052/transformation/my-new-transformation-1
+
++ Response 200
+
+### Delete Clojure code [DELETE]
+
++ Parameters
+    + transformation%2Did: (required, URI)
+        URI of the transformation
+
++ Request
+    + Headers
+        Authorization: Basic YXBpa2V5OmFwaXBhc3M=
+        transformation-id: http://dapaas.eu/users/15052/transformation/my-new-transformation-1
+
++ Response 200
+

@@ -1,0 +1,172 @@
+# Group Grafter Transformations
+
+## Performs Tabular transformation [/dapaas-service/grafter/transformation/pipe]
+
+### Tabular transformation [POST]
+
+Performs a PIPE transformation with Grafter and loads the result in a repository.
+
+You can provide an `input-distribution` URI or send an `input-file` as file attachment.
+
++ Parameters
+    + input%2Ddistribution: (optional, URI) - 
+        URI of an existing distribution
+    + result%2Ddistribution: (required, URI) - 
+        URI of an existing distribution
+    + result%2Dfile: (required, text) - 
+        Result filename
+    + result%2Dtype: (required, mimetype) - 
+      Result mimetype ```text/csv```
+    + transformation%2Did: (required, URI) - 
+        URI of an existing distribution
+
++ Request (input-file)
+    + Headers
+        Authorization: Basic YXBpa2V5OmFwaXBhc3M=
+        result-distribution: http://dapaas.eu/users/15052/distribution/my-result-distribution-1
+        result-file: transformed-data.csv
+        result-type: text/csv
+        transformation-id: http://dapaas.eu/users/15052/transformation/my-new-transformation-1
+
+    + Body
+
+        input-file (text/csv):  {
+            name,age,gender
+            …
+        }
+
++ Request
+    + Headers
+        Authorization: Basic YXBpa2V5OmFwaXBhc3M=
+        input-distribution: http://dapaas.eu/users/15052/distribution/my-distribution-1
+        result-distribution: http://dapaas.eu/users/15052/distribution/my-result-distribution-2
+        result-file: transformed-data.csv
+        result-type: text/csv
+        transformation-id: http://dapaas.eu/users/15052/transformation/my-new-transformation-1
+
++ Response
+
+
+## Performs Graft Transformation [/dapaas-service/grafter/transformation/graft]
+
+### Graft Transformation [POST]
+
+Performs a GRAFT transformation with Grafter and loads the result in a repository.
+
+You can provide an `input-distribution` URI or send an `input-file` as file attachment.
+
++ Parameters
+    + input%2Ddistribution: (optional, URI) - 
+        URI of an existing distribution
+    + result%2Ddistribution: (required, URI) - 
+        URI of an existing distribution
+    + result%2Dfile: (required, text) - 
+        Result filename
+    + result%2Dtype: (required, mimetype) - 
+      Result mimetype ```application/edn```
+    + transformation%2Did: (required, URI) - 
+        URI of an existing distribution
+
++ Request (input-file)
+    + Headers
+        Authorization: Basic YXBpa2V5OmFwaXBhc3M=
+        result-distribution: http://dapaas.eu/users/15052/distribution/my-result-distribution-1
+        result-file: transformed-data.nt
+        result-type: application/edn
+        transformation-id: http://dapaas.eu/users/15052/transformation/my-new-transformation-1
+
+    + Body
+
+        input-file (text/csv):  {
+            name,age,gender
+            …
+        }
+
++ Request
+    + Headers
+        Authorization: Basic YXBpa2V5OmFwaXBhc3M=
+        input-distribution: http://dapaas.eu/users/15052/distribution/my-distribution-1
+        result-distribution: http://dapaas.eu/users/15052/distribution/my-result-distribution-2
+        result-file: transformed-data.nt
+        result-type: application/edn
+        transformation-id: http://dapaas.eu/users/15052/transformation/my-new-transformation-1
+
++ Response
+
+## Preview Transformation [/dapaas-service/grafter/transformation/preview]
+
+### Preview Transformation [POST]
+
+Performs a data transformation with Grafter and returns directly the output without saving it.
+
+**Attachments**
+
+**input-file:**  Optional input file (as an alternative to the input-distribution header).
+
+**transformation-code:** The Clojure code (as an alternative to the transformation-id header).
+
++ Parameters
+    + transformation%2Did: (optional, URI) - 
+        URI of an existing distribution
+
+    + input%2Ddistribution: (optional, URI) - 
+        URI of an existing distribution
+
+    + transformation%2Dtype: (optional, text) - 
+        `graft` or `pipe`. Required when attaching the transformation-code.
+
+    + command: (optional, text) - 
+        The command to execute. Required when attaching the transformation-code.
+
+
++ Request
+    + Headers
+        Authorization: Basic YXBpa2V5OmFwaXBhc3M=
+        transformation-id: http://dapaas.eu/users/15052/transformation/my-new-transformation-1
+        input-distribution: http://dapaas.eu/users/15052/distribution/my-distribution-1
+
++ Request 
+    + Headers
+        Authorization: Basic YXBpa2V5OmFwaXBhc3M=
+        transformation-id: http://dapaas.eu/users/15052/transformation/my-new-transformation-1
+
+    + Body
+
+        input-file (text/csv):  {
+            person-uri,name,gender
+            …
+        }
+
++ Request
+    + Headers
+        Authorization: Basic YXBpa2V5OmFwaXBhc3M=
+        input-distribution: http://dapaas.eu/users/15052/distribution/my-distribution-1
+        transformation-type: pipe
+        command: my-pipe
+
+    + Body
+
+        transformation-code (text/plain):  {
+            (defpipe my-pipe "Example pipeline" [data-file] (-> (read-dataset data-file :format :csv)))
+        }
+
++ Request
+    + Headers
+        Authorization: Basic YXBpa2V5OmFwaXBhc3M=
+        transformation-type: pipe
+        command: my-pipe
+
+    + Body
+
+        input-file (text/csv):  {
+            person-uri,name,gender
+            …
+        },
+        transformation-code (text/plain):  {
+            (defpipe my-pipe "Example pipeline" [data-file] (-> (read-dataset data-file :format :csv)…))
+        }
+
++ Response
+
+    :name,:age:gender
+    …

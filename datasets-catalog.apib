@@ -25,22 +25,26 @@ Use the **showShared** header parameter to include the public datasets.
     {
         "@context": { ... }
         "@type": "dcat:Catalog",
-        "dct:publisher": "Alex",
-        "@id": "http://dapaas.eu/users/Alex/datasets",
+        "dct:publisher": "dapaas",
+        "@id": "http://dapaas.eu/users/dapaas/catalog",
         "dcat:record": [
             {
                 "@type": "dcat:CatalogRecord",
                 "foaf:primaryTopic": "http://eu.dapaas/dataset/1",
                 "dct:issued": "2014-09-16",
                 "dct:modified": "2014-09-17",
-                "dct:title": "My first DaPaaS dataset"
+                "dct:title": "My first DaPaaS dataset",
+                "dcat:public": "true",
+                "dct:publisher": "dapaas"
             },
             {
                 "@type": "dcat:CatalogRecord",
                 "foaf:primaryTopic": "http://eu.dapaas/dataset/2",
                 "dct:issued": "2014-09-15",
                 "dct:modified": "2014-09-17",
-                "dct:title": "My second DaPaaS dataset"
+                "dct:title": "My second DaPaaS dataset",
+                "dcat:public": "false",
+                "dct:publisher": "dapaas"
             }
         ]
     }
@@ -70,22 +74,26 @@ Use the **showShared** header parameter to include the public datasets.
     {
         "@context": { ... }
         "@type": "dcat:Catalog",
-        "dct:publisher": "Alex",
-        "@id": "http://dapaas.eu/users/Alex/datasets",
+        "dct:publisher": "dapaas",
+        "@id": "http://dapaas.eu/users/dapaas/catalog",
         "dcat:record": [
             {
                 "@type": "dcat:CatalogRecord",
                 "foaf:primaryTopic": "http://eu.dapaas/dataset/1",
                 "dct:issued": "2014-09-16",
                 "dct:modified": "2014-09-17",
-                "dct:title": "My first DaPaaS dataset"
+                "dct:title": "My first DaPaaS dataset",
+                "dcat:public": "true",
+                "dct:publisher": "dapaas"
             },
             {
                 "@type": "dcat:CatalogRecord",
                 "foaf:primaryTopic": "http://eu.dapaas/dataset/2",
                 "dct:issued": "2014-09-15",
                 "dct:modified": "2014-09-17",
-                "dct:title": "My second DaPaaS dataset"
+                "dct:title": "My second DaPaaS dataset",
+                "dcat:public": "false",
+                "dct:publisher": "dapaas"
             }
         ]
     }
@@ -94,7 +102,7 @@ Use the **showShared** header parameter to include the public datasets.
 
 ### Create Dataset [POST]
 
-If the description contains no @id, the system will generate one from the title.
+If the description contains no `@id`, the system will generate one from the title.
 
 A successfull creation returns the URI of the new dataset.
 
@@ -208,7 +216,7 @@ A successfull creation returns the URI of the new dataset.
 
 Use `Content-Type` to determine the metadata-format. The metadata should contain the file meta data (content-type, size, name). See the Model reference for the details.
 
-If the metadata doesn't contain a distirbution id, the system will generate one.
+If the metadata doesn't contain a distribution id, the system will generate one.
 
 **file:** The raw file content.
 
@@ -228,7 +236,7 @@ If the distribution is not a RDF distribution, the file attachment is optional.
         Authorization: Basic YXBpa2V5OmFwaXBhc3M=
     + Body
 
-        meta:  {
+        meta (application/ld+json):  {
             '@context': {...},
             '@type': 'dcat:Distribution',
             'dct:title': 'my-distribution', 
@@ -297,7 +305,7 @@ The file attachment is optional. If provided, it will overwrite the previous one
         Authorization: Basic YXBpa2V5OmFwaXBhc3M=
     + Body
 
-        meta:  {
+        meta (application/ld+json):  {
             '@context': {...},
             '@type': 'dcat:Distribution',
             '@id': 'http://dapaas.eu/users/15052/distribution/my-distribution-1',
