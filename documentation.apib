@@ -6,8 +6,32 @@
 
 </div>
 
-<!-- include(security-and-authentication.md) -->
+<!-- include(security-and-authentication.apib) -->
 
-<!-- include(model-reference.md) -->
+<!-- include(model-reference.apib) -->
 
-<!-- include(datasets-catalog.md) -->
+# Group Usage
+
+### Endpoint
+
+```
+https://api.datagraft.net/
+```
+
+### Parameters
+
+Unless otherwise stated, all the parameters are **header parameters**. It means they are sent in the HTTP headers.
+
+For example, the `q` search parameter of a catalog search is sent in the HTTP headers:
+```
+GET /catalog/datasets/search HTTP/1.1
+Host: api.datagraft.net
+Accept: application/ld+json
+Accept-Encoding: gzip, deflate, sdch
+Authorization: Basic a2V5OnNlY3JldA==
+q: mysearch 
+```
+
+<!-- include(datasets-catalog.apib) -->
+
+<!-- include(rdf-repositories.apib) -->

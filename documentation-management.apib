@@ -1,0 +1,92 @@
+# Datagraft API
+
+Datagraft is an API for executing and saving transfomations.
+
+# Group User Management API
+
+# Login [/accounts/login]
+
+## Username and password [PUT]
+
++ Request (application/json)
+
+        {
+            "username": "<username>",
+            "password": "<password>"
+        }
+
++ Response 200
++ Response 401
+
+        {
+            "message" : "<error_message>"
+        }
+
+## Google+ ID [PUT]
+
++ Request (application/json)
+
+        {
+            "google_id": "<google_id>"
+        }
+
++ Response 200
++ Response 401
+
+        {
+            "message" : "<error_message>"
+        }
+
+## Twitter ID [PUT]
+
++ Request (application/json)
+
+        {
+            "twitter_id": "<twitter_id>"
+        }
+
++ Response 200
++ Response 401
+
+        {
+            "message" : "<error_message>"
+        }
+
+## Facebook ID [PUT]
+
++ Request (application/json)
+
+        {
+            "facebook_id": "<facebook_id>"
+        }
+
++ Response 200
++ Response 401
+
+        {
+            "message" : "<error_message>"
+        }
+
+# Logout [/accounts/logout]
+
+
+## Logout [PUT]
+
++ Request
+
++ Response 200
++ Response 401
+
+        {
+            "message" : "<error_message>"
+        }
+        
+# Group Grafter Transformations API
+
+# GET /message
++ Response 200 (text/plain)
+    
+        Bonjour
+
+# GET /canard
++ Response 404 (text/plain)

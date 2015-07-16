@@ -1,0 +1,52 @@
+
+# Group RDF Repositories
+
+## OpenRDF Sesame [/]
+
+The RDF repositories API is accessible at the address ```https://rdf.datagraft.net/```.
+
+It exposes the [OpenRDF Sesame API](http://rdf4j.org/sesame/2.7/docs/system.docbook?view).
+
+**However the authentication is still required.** Using the Authorization header as defined in the beginning of this document.
+
+##RDF repository [/catalog/distributions/repository]
+
+### Provision RDF repository [PUT]
+
+Use `/catalog/distributions/repository_async` to provision the repository asynchronously.
+
+This service returns a repository url.
+
++ Parameters
+    + distrib%2Did: (required, URI) - 
+        URI of the distribution
+    + repository%2Did: (required, text) - 
+        Identifier for the new repository (lowercased, alphanumerical)
+
++ Request
+    + Headers
+        Authorization: Basic YXBpa2V5OmFwaXBhc3M=
+        distrib-id: http://dapaas.eu/users/15052/distribution/my-distribution-1
+        repository-id: my-new-repository
+
++ Response 200
+
+    {
+        "access-url": "<repository url>"
+    }
+
+### Release RDF repository [DELETE]
+
++ Parameters
+    + distrib%2Did: (required, URI) - 
+        URI of the distribution
+    + repository%2Did: (required, text) - 
+        Identifier for the new repository (lowercased, alphanumerical)
+
++ Request
+    + Headers
+        Authorization: Basic YXBpa2V5OmFwaXBhc3M=
+        distrib-id: http://dapaas.eu/users/15052/distribution/my-distribution-1
+        repository-id: my-new-repository
+
++ Response 200

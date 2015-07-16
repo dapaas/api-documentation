@@ -1,0 +1,344 @@
+# Group Datasets Catalog
+
+
+## List All Datasets [/catalog/datasets/catalog]
+
+List of datasets catalog records using the DCAT vocabulary in RDF or JSON-LD.
+
+Use the **showShared** header parameter to include the public datasets.
+
++ Parameters
+    + showShared: (optional, y|n) - defaults to `n`
+    + Accept: (required, mimetype) - 
+      ```application/ld+json``` or ```application/rdf+xml```
+
+### List users's datasets [GET]
+
++ Request
+    + Headers
+        Accept: application/ld+json
+        Authorization: Basic YXBpa2V5OmFwaXBhc3M=
+        showShared: n
+
++ Response 200
+
+    {
+        "@context": { ... }
+        "@type": "dcat:Catalog",
+        "dct:publisher": "Alex",
+        "@id": "http://dapaas.eu/users/Alex/datasets",
+        "dcat:record": [
+            {
+                "@type": "dcat:CatalogRecord",
+                "foaf:primaryTopic": "http://eu.dapaas/dataset/1",
+                "dct:issued": "2014-09-16",
+                "dct:modified": "2014-09-17",
+                "dct:title": "My first DaPaaS dataset"
+            },
+            {
+                "@type": "dcat:CatalogRecord",
+                "foaf:primaryTopic": "http://eu.dapaas/dataset/2",
+                "dct:issued": "2014-09-15",
+                "dct:modified": "2014-09-17",
+                "dct:title": "My second DaPaaS dataset"
+            }
+        ]
+    }
+
+## Search Datasets [/catalog/datasets/search]
+
+Text search on the datasets metadata.
+
+Use the **showShared** header parameter to include the public datasets.
+
++ Parameters
+    + q: (required, text) - The text query  
+    + showShared: (optional, y|n) - defaults to `n`
+    + Accept: (required, mimetype) - 
+      ```application/ld+json``` or ```application/rdf+xml```
+
+### Search users's datasets [GET]
++ Request
+    + Headers
+        Accept: application/ld+json
+        Authorization: Basic YXBpa2V5OmFwaXBhc3M=
+        showShared: n
+        q: DaPaaS
+
++ Response 200
+
+    {
+        "@context": { ... }
+        "@type": "dcat:Catalog",
+        "dct:publisher": "Alex",
+        "@id": "http://dapaas.eu/users/Alex/datasets",
+        "dcat:record": [
+            {
+                "@type": "dcat:CatalogRecord",
+                "foaf:primaryTopic": "http://eu.dapaas/dataset/1",
+                "dct:issued": "2014-09-16",
+                "dct:modified": "2014-09-17",
+                "dct:title": "My first DaPaaS dataset"
+            },
+            {
+                "@type": "dcat:CatalogRecord",
+                "foaf:primaryTopic": "http://eu.dapaas/dataset/2",
+                "dct:issued": "2014-09-15",
+                "dct:modified": "2014-09-17",
+                "dct:title": "My second DaPaaS dataset"
+            }
+        ]
+    }
+
+## Dataset CRUD [/catalog/datasets]
+
+### Create Dataset [POST]
+
+If the description contains no @id, the system will generate one from the title.
+
+A successfull creation returns the URI of the new dataset.
+
++ Parameters
+    + Content%2DType: (required, mimetype) - 
+      ```application/ld+json``` or ```application/rdf+xml```
+
+
++ Request (application/ld+json)
+    + Headers
+        Authorization: Basic YXBpa2V5OmFwaXBhc3M=
+    + Body
+
+        {
+            '@context': {...},
+            '@type': 'dcat:Dataset',
+            'dct:title': 'My new dataset',
+            'dct:description': 'Example dataset for the documentation',
+            'dcat:public': 'false'
+        }
+
++ Response 200
+
+    {
+        "@id": "http://dapaas.eu/users/15052/dataset/my-new-dataset-1"
+    }
+
+
+### Read Dataset [GET]
+
+Get the complete dataset description using the DCAT vocabulary in RDF or JSON-LD.
+
++ Parameters
+    + dataset%2Did: (required, URI)
+        URI of the dataset, taken from the catalog
+    + Accept: (required, mimetype) - 
+      ```application/ld+json``` or ```application/rdf+xml```
+
++ Request
+    + Headers
+        Accept: application/ld+json
+        Authorization: Basic YXBpa2V5OmFwaXBhc3M=
+        dataset-id: http://dapaas.eu/users/15052/dataset/preview-1
+
++ Response 200
+
+    {
+        "@context": {...},
+        "@id": "http://dapaas.eu/users/15052/dataset/preview-1",
+        "@type": "dcat:Dataset",
+        "dcat:distribution": [
+            "http://dapaas.eu/users/15052/distribution/July+-+2005-2006.csv-1",
+            ...],
+        "dcat:keyword": [],
+        "dct:description": "Dataset containing the previewed files from Grafterizer",
+        "dct:public": false,
+        "dct:publisher": "dapaas",
+        "dct:title": "Previewed files" 
+    }
+
+
+### Update Dataset [PUT]
+
+Note: The complete dataset should be included. It is not merged with the previous version.
+
++ Parameters
+    + Content%2DType: (required, mimetype) - 
+      ```application/ld+json``` or ```application/rdf+xml```
+
+
++ Request (application/ld+json)
+    + Headers
+        Authorization: Basic YXBpa2V5OmFwaXBhc3M=
+    + Body
+
+        {
+            '@context': {...},
+            '@type': 'dcat:Dataset',
+            '@id': 'http://dapaas.eu/users/15052/dataset/my-new-dataset-1',
+            'dct:title': 'My new dataset',
+            'dct:description': 'My dataset now public',
+            'dcat:public': 'true'
+        }
+
++ Response 200
+
+### Delete Dataset [DELETE]
+
+When deleting a dataset, the system will also delete the attached distributions.
+
++ Parameters
+    + dataset%2Did: (required, URI)
+        URI of the dataset, taken from the catalog
+
++ Request
+    + Headers
+        Authorization: Basic YXBpa2V5OmFwaXBhc3M=
+        dataset-id: http://dapaas.eu/users/15052/dataset/preview-1
+
++ Response 200
+
+## Distribution CRUD [/catalog/distributions]
+
+### Create Distribution [POST]
+
+A successfull creation returns the URI of the new dataset.
+
+**Attachments**
+
+**meta:**  Distribution metadata as RDF or JSON-LD.
+
+Use `Content-Type` to determine the metadata-format. The metadata should contain the file meta data (content-type, size, name). See the Model reference for the details.
+
+If the metadata doesn't contain a distirbution id, the system will generate one.
+
+**file:** The raw file content.
+
+If the distribution is not a RDF distribution, the file attachment is optional.
+
+
+
++ Parameters
+    + dataset%2Did: (required, URI)
+        URI of the dataset container
+    + Content%2DType: (required, mimetype) - 
+      ```multipart/mixed``` or ```multipart/form-data```
+
+
++ Request 
+    + Headers
+        Authorization: Basic YXBpa2V5OmFwaXBhc3M=
+    + Body
+
+        meta:  {
+            '@context': {...},
+            '@type': 'dcat:Distribution',
+            'dct:title': 'my-distribution', 
+            'dct:description': 'Distribution example',
+            'dcat:fileName': 'source.csv',
+            'dcat:mediaType': 'text/csv' 
+        },
+        file: <RAW>
+
++ Response 200
+
+    {
+        "@id": "http://dapaas.eu/users/15052/distribution/my-distribution-1"
+    }
+
+
+### Read Distribution [GET]
+
+Get the complete distribution description.
+
++ Parameters
+    + distrib%2Did: (required, URI) - 
+        URI of the distribution, taken from the catalog
+    + Accept: (required, mimetype) - 
+      ```application/ld+json``` or ```application/rdf+xml```
+
++ Request
+    + Headers
+        Accept: application/ld+json
+        Authorization: Basic YXBpa2V5OmFwaXBhc3M=
+        distrib-id: http://dapaas.eu/users/15052/distribution/my-distribution-1
+
++ Response 200
+
+    {
+        "@context": {...},
+        "@id": "http://dapaas.eu/users/15052/distribution/my-distribution-1",
+        "@type": "dcat:Distribution",
+        "dct:title": "my-distribution",
+        "dct:description": "Distribution example",
+        "dct:fileID": "159532fa-62ec-4543-a662-fc7a081181b3.bin",
+        "http://www.w3.org/ns/dcat#mediaType": "text/csv",
+        "http://www.w3.org/ns/dcat#fileName": "source.csv"
+    }
+
+
+### Update Distribution [PUT]
+
+
+**Attachments**
+
+**meta:**  Distribution metadata as RDF or JSON-LD.
+
+Use `Content-Type` to determine the metadata-format. 
+
+**file:** The raw file content.
+
+The file attachment is optional. If provided, it will overwrite the previous one. The metadata should also be provided to contain the updated file metadata (content-type, size, name).
+
++ Parameters
+    + Content%2DType: (required, mimetype) - 
+      ```multipart/mixed``` or ```multipart/form-data```
+
++ Request 
+    + Headers
+        Authorization: Basic YXBpa2V5OmFwaXBhc3M=
+    + Body
+
+        meta:  {
+            '@context': {...},
+            '@type': 'dcat:Distribution',
+            '@id': 'http://dapaas.eu/users/15052/distribution/my-distribution-1',
+            'dct:title': 'my-distribution', 
+            'dct:description': 'Distribution example',
+            'dcat:fileName': 'source.csv',
+            'dcat:mediaType': 'text/csv' 
+        },
+        file: <RAW>
+
++ Response 200
+
+
+### Delete Distribution [DELETE]
+
+When deleting a distribution, the system will also release the attached RDF repositories.
+
++ Parameters
+    + distrib%2Did: (required, URI)
+        URI of the distribution
+
++ Request
+    + Headers
+        Authorization: Basic YXBpa2V5OmFwaXBhc3M=
+        dataset-id: http://dapaas.eu/users/15052/dataset/preview-1
+
++ Response 200
+
+
+## Distribution raw file access [/catalog/distributions/file]
+
+### Distribution Raw file access [GET]
+
++ Parameters
+    + distrib%2Did: (required, URI)
+        URI of the distribution
+
++ Request
+    + Headers
+        Authorization: Basic YXBpa2V5OmFwaXBhc3M=
+        dataset-id: http://dapaas.eu/users/15052/dataset/preview-1
+
++ Response 200
+
