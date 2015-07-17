@@ -12,7 +12,7 @@ Use the **showShared** header parameter to include the public transformations.
     + Accept: (required, mimetype) - 
       ```application/ld+json``` or ```application/rdf+xml```
 
-### List users's transformations [GET]
+### List user's transformations [GET]
 
 + Request
     + Headers
@@ -61,7 +61,7 @@ Use the **showShared** header parameter to include the public transformations.
     + Accept: (required, mimetype) - 
       ```application/ld+json``` or ```application/rdf+xml```
 
-### Search users's transformations [GET]
+### Search user's transformations [GET]
 + Request
     + Headers
         Accept: application/ld+json
@@ -102,11 +102,11 @@ Use the **showShared** header parameter to include the public transformations.
 
 ### Create Transformation [POST]
 
-A successfull creation returns the URI of the new transformation.
+A successful creation returns the URI of the new transformation.
 
 If the description contains no `@id`, the system will generate one from the title.
 
-Note: only new transformations are created with this method. Any subsequent calls with the same data generates an error response.
+Note: only new transformations are created with this method. Any subsequent calls with the same data generate an error response.
 
 **Attachments**
 
@@ -114,7 +114,7 @@ Note: only new transformations are created with this method. Any subsequent call
 
 Use `Content-Type` to determine the metadata-format.
 
-If the metadata doesn't contain a distirbution id, the system will generate one.
+If the metadata doesn't contain a distribution id, the system will generate one.
 
 **tr-clojure:** The code of the transformation as Grafter Clojure.
 
@@ -195,7 +195,7 @@ Note: The complete transformation metadata should be included. It is not merged 
 
 **tr-clojure:** Optional code of the transformation as Grafter Clojure.
 
-meta and tr-clojure cand be managed separately.
+meta and tr-clojure can be managed separately.
 
 + Parameters
     + Content%2DType: (required, mimetype) - 

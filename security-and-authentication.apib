@@ -1,6 +1,6 @@
 # Group Security and authentication
 
-The Datagraft API is restricted to authentified application, using an access key and a secret. You can manage your access keys and secrets using the [Datagraft API key manager](http://datagraft.net/pages/keymanager/index.jsp).
+The Datagraft API is restricted to authenticated application, using an access key and a secret. You can manage your access keys and secrets using the [Datagraft API key manager](http://datagraft.net/pages/keymanager/index.jsp).
 
 
 #### HTTPS
@@ -10,7 +10,7 @@ The API is only accessible through HTTPS.
 
 #### Authentication
 
-The authentication is done using HTTP Basic authentication, and therefore the HTTP authorization header field. It consists of the text 'Basic ' concatened with the base64 encoding of the API key and the API secret separated by a colon.
+The authentication is done using HTTP Basic authentication, and therefore the HTTP authorization header field. It consists of the text 'Basic ' concatenated with the base64 encoding of the API key and the API secret separated by a colon.
 
 Example in JavaScript:
 ```javascript
