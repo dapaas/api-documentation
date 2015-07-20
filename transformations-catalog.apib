@@ -1,5 +1,13 @@
 # Group Transformations Catalog
 
+Transformations are usefull to clean and convert your data.
+The transformation main component consists of a [Grafter](http://grafter.org/) script.
+
+[![](grafter_logo.png)](http://grafter.org) 
+
+You can use [Grafterizer](https://grafterizer.datagraft.net/) to generate the transformations and the Clojure source code.
+
+[![](grafterizer_logo.png)](https://grafterizer.datagraft.net/)
 
 ## List all Transformations [/catalog/transformations/catalog]
 
@@ -116,7 +124,7 @@ Use `Content-Type` to determine the metadata-format.
 
 If the metadata doesn't contain a distribution id, the system will generate one.
 
-**tr-clojure:** The code of the transformation as Grafter Clojure.
+**tr-clojure:** The code of the transformation as [Grafter Clojure](http://api.grafter.org/0.4.0/).
 
 + Parameters
     + Content%2DType: (required, mimetype) - 
@@ -193,7 +201,7 @@ Use `Content-Type` to determine the metadata-format.
 
 Note: The complete transformation metadata should be included. It is not merged with the previous version.
 
-**tr-clojure:** Optional code of the transformation as Grafter Clojure.
+**tr-clojure:** Optional code of the transformation as [Grafter Clojure](http://api.grafter.org/0.4.0/).
 
 meta and tr-clojure can be managed separately.
 
