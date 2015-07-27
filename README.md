@@ -1,6 +1,8 @@
-# Documentation
+# API's documentation
 
-[Documentation for Datagraft.net](http://dapaas.github.io/documentation/)
+Source repository for the API of DataGraft.net.
+
+[Browse](http://dapaas.github.io/api-documentation/)
 
 ## Tools:
 
