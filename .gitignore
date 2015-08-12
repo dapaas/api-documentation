@@ -1,7 +1,8 @@
-.swp
+grafterizer/.swp
 .odg
 .odt
-.mdf
-mdframed*
-.sty
+grafterizer/.cls
+grafterizer/.mdf
+grafterizer/mdframed*
+grafterizer/.sty
 .sass-cache
