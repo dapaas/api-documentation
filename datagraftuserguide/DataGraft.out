@@ -1,0 +1,22 @@
+\BOOKMARK [1][-]{section.1}{Platform overview}{}% 1
+\BOOKMARK [1][-]{section.2}{User Registration}{}% 2
+\BOOKMARK [1][-]{section.3}{User Dashboard}{}% 3
+\BOOKMARK [1][-]{section.4}{Publishing data }{}% 4
+\BOOKMARK [1][-]{section.5}{Data cleaning and transformation }{}% 5
+\BOOKMARK [2][-]{subsection.5.1}{Transformation metadata}{section.5}% 6
+\BOOKMARK [2][-]{subsection.5.2}{Transformation preview}{section.5}% 7
+\BOOKMARK [2][-]{subsection.5.3}{Transformation pipeline}{section.5}% 8
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Make Dataset }{subsection.5.3}% 9
+\BOOKMARK [3][-]{subsubsection.5.3.2}{Reshape Dataset}{subsection.5.3}% 10
+\BOOKMARK [3][-]{subsubsection.5.3.3}{Add Columns }{subsection.5.3}% 11
+\BOOKMARK [2][-]{subsection.5.4}{Take/Drop Columns}{section.5}% 12
+\BOOKMARK [3][-]{subsubsection.5.4.1}{Derive Column}{subsection.5.4}% 13
+\BOOKMARK [3][-]{subsubsection.5.4.2}{Drop Rows}{subsection.5.4}% 14
+\BOOKMARK [2][-]{subsection.5.5}{Filter Dataset}{section.5}% 15
+\BOOKMARK [3][-]{subsubsection.5.5.1}{Map Columns}{subsection.5.5}% 16
+\BOOKMARK [3][-]{subsubsection.5.5.2}{Rename Columns}{subsection.5.5}% 17
+\BOOKMARK [3][-]{subsubsection.5.5.3}{Split Column}{subsection.5.5}% 18
+\BOOKMARK [3][-]{subsubsection.5.5.4}{Take Rows}{subsection.5.5}% 19
+\BOOKMARK [3][-]{subsubsection.5.5.5}{Adding Custom Function to Your Pipeline }{subsection.5.5}% 20
+\BOOKMARK [3][-]{subsubsection.5.5.6}{Creating and editing custom utility functions }{subsection.5.5}% 21
+\BOOKMARK [3][-]{subsubsection.5.5.7}{Creating and editing prefixers }{subsection.5.5}% 22

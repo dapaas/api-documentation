@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.7.21)  12 AUG 2015 16:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.7.21)  17 AUG 2015 18:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Grafterizer.tex
-(./Grafterizer.tex
+**DataGraft.tex
+(./DataGraft.tex
 LaTeX2e <2011/06/27>
 Babel <3.9k> and hyphenation patterns for 2 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -896,32 +896,56 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'USenglish'.
- (./Grafterizer.aux)
-\openout1 = `Grafterizer.aux'.
+ (./DataGraft.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 27.
+LaTeX Warning: Label `meta' multiply defined.
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+
+LaTeX Warning: Label `meta' multiply defined.
+
+
+LaTeX Warning: Label `meta' multiply defined.
+
+
+LaTeX Warning: Label `meta' multiply defined.
+
+
+LaTeX Warning: Label `meta' multiply defined.
+
+
+LaTeX Warning: Label `meta' multiply defined.
+
+
+LaTeX Warning: Label `meta' multiply defined.
+
+
+LaTeX Warning: Label `customFunc' multiply defined.
+
+)
+\openout1 = `DataGraft.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 30.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    ... okay on input line 30.
 \AtBeginShipoutBox=\box46
-Package hyperref Info: Link coloring OFF on input line 27.
+Package hyperref Info: Link coloring OFF on input line 30.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -931,13 +955,13 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count143
 )
-LaTeX Info: Redefining \ref on input line 27.
-LaTeX Info: Redefining \pageref on input line 27.
-LaTeX Info: Redefining \nameref on input line 27.
+LaTeX Info: Redefining \ref on input line 30.
+LaTeX Info: Redefining \pageref on input line 30.
+LaTeX Info: Redefining \nameref on input line 30.
 
-(./Grafterizer.out) (./Grafterizer.out)
+(./DataGraft.out) (./DataGraft.out)
 \@outlinefile=\write3
-\openout3 = `Grafterizer.out'.
+\openout3 = `DataGraft.out'.
 
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
@@ -969,46 +993,47 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 28.
+(Font)              <12> on input line 31.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 28.
+(Font)              <8> on input line 31.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 28.
+(Font)              <6> on input line 31.
 
 
 LaTeX Warning: No \author given.
 
 
-LaTeX Warning: Reference `datapagemeta' on page 1 undefined on input line 36.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--37
+Underfull \hbox (badness 10000) in paragraph at lines 36--40
 
  []
 
-<datapagemeta.png, id=4, 808.52063pt x 264.23718pt>
+<datapagemeta.png, id=93, 808.52063pt x 264.23718pt>
 File: datapagemeta.png Graphic file (type png)
  <use datapagemeta.png>
-Package pdftex.def Info: datapagemeta.png used on input line 42.
+Package pdftex.def Info: datapagemeta.png used on input line 45.
 (pdftex.def)             Requested size: 348.23694pt x 113.81102pt.
 
-Overfull \hbox (3.23694pt too wide) in paragraph at lines 42--43
+Overfull \hbox (3.23694pt too wide) in paragraph at lines 45--46
  [][] 
  []
 
-<exportraw.png, id=6, 72.27pt x 15.80907pt>
+<exportraw.png, id=95, 72.27pt x 15.80907pt>
 File: exportraw.png Graphic file (type png)
  <use exportraw.png>
-Package pdftex.def Info: exportraw.png used on input line 47.
+Package pdftex.def Info: exportraw.png used on input line 50.
 (pdftex.def)             Requested size: 57.81606pt x 12.64725pt.
 
-<exportrdf.png, id=7, 69.25874pt x 15.80907pt>
+<exportrdf.png, id=96, 69.25874pt x 15.80907pt>
 File: exportrdf.png Graphic file (type png)
  <use exportrdf.png>
-Package pdftex.def Info: exportrdf.png used on input line 47.
+Package pdftex.def Info: exportrdf.png used on input line 50.
 (pdftex.def)             Requested size: 55.40706pt x 12.64725pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--54
+
+Package hyperref Warning: Suppressing empty link on input line 57.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--58
 
  []
 
@@ -1017,167 +1042,212 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--54
 {/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map} <./datapagem
 eta.png>]
 
-LaTeX Warning: Reference `publish' on page 2 undefined on input line 55.
+Package hyperref Warning: Suppressing empty link on input line 59.
 
-<publish.png, id=20, 42.1575pt x 17.31468pt>
+<publish.png, id=108, 42.1575pt x 17.31468pt>
 File: publish.png Graphic file (type png)
  <use publish.png>
-Package pdftex.def Info: publish.png used on input line 60.
+Package pdftex.def Info: publish.png used on input line 64.
 (pdftex.def)             Requested size: 33.72603pt x 13.85175pt.
 
-<upload.png, id=21, 880.03781pt x 323.70938pt>
+<upload.png, id=109, 880.03781pt x 323.70938pt>
 File: upload.png Graphic file (type png)
  <use upload.png>
-Package pdftex.def Info: upload.png used on input line 64.
+Package pdftex.def Info: upload.png used on input line 68.
 (pdftex.def)             Requested size: 348.08783pt x 128.0374pt.
 
-Overfull \hbox (3.08783pt too wide) in paragraph at lines 64--65
+Overfull \hbox (3.08783pt too wide) in paragraph at lines 68--69
  [][] 
  []
 
 [2 <./exportraw.png> <./exportrdf.png> <./publish.png (PNG copy)>]
-<save.png, id=31, 28.60687pt x 27.10126pt>
+<createraw.png, id=116, 68.50594pt x 15.05624pt>
+File: createraw.png Graphic file (type png)
+ <use createraw.png>
+Package pdftex.def Info: createraw.png used on input line 83.
+(pdftex.def)             Requested size: 54.80481pt x 12.045pt.
+
+<createdatapage.png, id=118, 103.88812pt x 15.05624pt>
+File: createdatapage.png Graphic file (type png)
+
+<use createdatapage.png>
+Package pdftex.def Info: createdatapage.png used on input line 83.
+(pdftex.def)             Requested size: 83.1106pt x 12.045pt.
+
+<createusingnewtransformation.png, id=119, 219.06844pt x 18.82031pt>
+File: createusingnewtransformation.png Graphic file (type png)
+
+<use createusingnewtransformation.png>
+Package pdftex.def Info: createusingnewtransformation.png used on input line 85
+.
+(pdftex.def)             Requested size: 175.25497pt x 15.05624pt.
+
+Overfull \hbox (11.13953pt too wide) in paragraph at lines 90--91
+[]\OT1/cmr/m/n/10 In the ba-sis of Data-Graft data trans-for-ma-tions there lie
+s a Grafter DSL(Domain
+ []
+
+[3 <./upload.png> <./createraw.png> <./createdatapage.png> <./createusingnewtra
+nsformation.png>] <save.png, id=133, 28.60687pt x 27.10126pt>
 File: save.png Graphic file (type png)
  <use save.png>
-Package pdftex.def Info: save.png used on input line 86.
+Package pdftex.def Info: save.png used on input line 98.
 (pdftex.def)             Requested size: 22.88551pt x 21.68102pt.
 
-<meta.png, id=32, 614.295pt x 433.62pt>
-File: meta.png Graphic file (type png)
- <use meta.png>
-Package pdftex.def Info: meta.png used on input line 92.
-(pdftex.def)             Requested size: 241.8518pt x 170.71652pt.
- [3 <./upload.png> <./save.png>] <add.png, id=47, 21.07875pt x 23.33719pt>
+<transformationmeta.png, id=134, 614.295pt x 361.35pt>
+File: transformationmeta.png Graphic file (type png)
+
+<use transformationmeta.png>
+Package pdftex.def Info: transformationmeta.png used on input line 104.
+(pdftex.def)             Requested size: 290.21841pt x 170.71652pt.
+ <open.png, id=135, 51.19125pt x 48.18pt>
+File: open.png Graphic file (type png)
+
+<use open.png>
+Package pdftex.def Info: open.png used on input line 111.
+(pdftex.def)             Requested size: 15.35748pt x 14.4541pt.
+ <applytoexisting.png, id=136, 50.1875pt x 47.17625pt>
+File: applytoexisting.png Graphic file (type png)
+
+<use applytoexisting.png>
+Package pdftex.def Info: applytoexisting.png used on input line 111.
+(pdftex.def)             Requested size: 15.05635pt x 14.15297pt.
+ <uploadnew.png, id=137, 47.17625pt x 46.1725pt>
+File: uploadnew.png Graphic file (type png)
+
+<use uploadnew.png>
+Package pdftex.def Info: uploadnew.png used on input line 111.
+(pdftex.def)             Requested size: 14.15297pt x 13.85184pt.
+ [4 <./save.png> <./transformationmeta.png> <./open.png> <./applytoexisting.png
+> <./uploadnew.png>]
+<preview.png, id=148, 621.82312pt x 452.4403pt>
+File: preview.png Graphic file (type png)
+ <use preview.png>
+Package pdftex.def Info: preview.png used on input line 118.
+(pdftex.def)             Requested size: 273.72636pt x 199.16928pt.
+ [5 <./preview.png>] <add.png, id=155, 21.07875pt x 23.33719pt>
 File: add.png Graphic file (type png)
  <use add.png>
-Package pdftex.def Info: add.png used on input line 102.
-(pdftex.def)             Requested size: 16.86299pt x 18.66975pt.
+Package pdftex.def Info: add.png used on input line 127.
+(pdftex.def)             Requested size: 10.53934pt x 11.66855pt.
 
-<addpipefunction.png, id=48, 112.92188pt x 93.34875pt>
+<addpipefunction.png, id=156, 112.92188pt x 93.34875pt>
 File: addpipefunction.png Graphic file (type png)
 
 <use addpipefunction.png>
-Package pdftex.def Info: addpipefunction.png used on input line 106.
+Package pdftex.def Info: addpipefunction.png used on input line 131.
 (pdftex.def)             Requested size: 68.83743pt x 56.9055pt.
- <functionlist.png, id=49, 722.7pt x 408.02437pt>
+
+<functionlist.png, id=157, 718.93594pt x 196.48407pt>
 File: functionlist.png Graphic file (type png)
+ <use functionlist.png>
+Package pdftex.def Info: functionlist.png used on input line 140.
+(pdftex.def)             Requested size: 312.32872pt x 85.35826pt.
 
-<use functionlist.png>
-Package pdftex.def Info: functionlist.png used on input line 115.
-(pdftex.def)             Requested size: 201.58269pt x 113.81102pt.
- [4 <./meta.png> <./add.png> <./addpipefunction.png>]
-<pipefunccommon.png, id=59, 614.295pt x 433.62pt>
-File: pipefunccommon.png Graphic file (type png)
- <use pipefunccommon.png>
-Package pdftex.def Info: pipefunccommon.png used on input line 125.
-(pdftex.def)             Requested size: 282.15732pt x 199.16928pt.
+<pipefunccommon1.png, id=158, 614.295pt x 361.35pt>
+File: pipefunccommon1.png Graphic file (type png)
+ <use pipefunccommon1.png>
+Package pdftex.def Info: pipefunccommon1.png used on input line 150.
+(pdftex.def)             Requested size: 266.03511pt x 156.49014pt.
 
+<minus.png, id=159, 19.57312pt x 18.0675pt>
+File: minus.png Graphic file (type png)
+ <use minus.png>
+Package pdftex.def Info: minus.png used on input line 155.
+(pdftex.def)             Requested size: 9.78653pt x 9.03372pt.
+ [6 <./add.png> <./addpipefunction.png> <./functionlist.png>] [7 <./pipefunccom
+mon1.png> <./minus.png>] <addcolumnf1.png, id=177, 614.295pt x 361.35pt>
+File: addcolumnf1.png Graphic file (type png)
+ <use addcolumnf1.png>
+Package pdftex.def Info: addcolumnf1.png used on input line 176.
+(pdftex.def)             Requested size: 290.21841pt x 170.71652pt.
 
-LaTeX Warning: Reference `addcolumns' on page 5 undefined on input line 130.
-
-
-LaTeX Warning: Reference `customfunction' on page 5 undefined on input line 130
-.
-
-[5 <./functionlist.png> <./pipefunccommon.png>]
-<addcolumnf.png, id=69, 614.295pt x 433.62pt>
-File: addcolumnf.png Graphic file (type png)
- <use addcolumnf.png>
-Package pdftex.def Info: addcolumnf.png used on input line 140.
-(pdftex.def)             Requested size: 241.8518pt x 170.71652pt.
-
-<columns.png, id=70, 614.295pt x 361.35pt>
-File: columns.png Graphic file (type png)
- <use columns.png>
-Package pdftex.def Info: columns.png used on input line 154.
-(pdftex.def)             Requested size: 241.8518pt x 142.26378pt.
+<columns1.png, id=178, 614.295pt x 361.35pt>
+File: columns1.png Graphic file (type png)
+ <use columns1.png>
+Package pdftex.def Info: columns1.png used on input line 189.
+(pdftex.def)             Requested size: 338.58504pt x 199.16928pt.
 
 
-LaTeX Warning: Reference `customFunc' on page 6 undefined on input line 161.
+Package hyperref Warning: Suppressing empty link on input line 196.
 
-[6 <./addcolumnf.png>] <compose.png, id=80, 83.5622pt x 32.37094pt>
+<compose.png, id=179, 83.5622pt x 32.37094pt>
 File: compose.png Graphic file (type png)
-
-<use compose.png>
-Package pdftex.def Info: compose.png used on input line 163.
+ <use compose.png>
+Package pdftex.def Info: compose.png used on input line 198.
 (pdftex.def)             Requested size: 41.78099pt x 16.18542pt.
- <trash.png, id=81, 21.07875pt x 15.80907pt>
+
+<trash.png, id=180, 21.07875pt x 15.80907pt>
 File: trash.png Graphic file (type png)
  <use trash.png>
-Package pdftex.def Info: trash.png used on input line 163.
+Package pdftex.def Info: trash.png used on input line 198.
 (pdftex.def)             Requested size: 16.86299pt x 12.64725pt.
-
-<tutorial.png, id=82, 24.09pt x 24.09pt>
+Package mdframed Info: Not enough space on this page on input line 199.
+ [8 <./addcolumnf1.png>]
+Package mdframed Info: Not enough space on this page on input line 199.
+ <tutorial.png, id=187, 24.09pt x 24.09pt>
 File: tutorial.png Graphic file (type png)
  <use tutorial.png>
-Package pdftex.def Info: tutorial.png used on input line 177.
+Package pdftex.def Info: tutorial.png used on input line 212.
 (pdftex.def)             Requested size: 14.45409pt x 14.45409pt.
- [7 <./columns.png> <./compose.png> <./trash.png>] [8 <./tutorial.png>]
-<editprefixers.png, id=104, 110.4125pt x 36.135pt>
+ [9 <./columns1.png> <./compose.png> <./trash.png>]
+<editprefixers.png, id=197, 110.4125pt x 36.135pt>
 File: editprefixers.png Graphic file (type png)
  <use editprefixers.png>
-Package pdftex.def Info: editprefixers.png used on input line 205.
+Package pdftex.def Info: editprefixers.png used on input line 237.
 (pdftex.def)             Requested size: 55.2061pt x 18.06744pt.
 
-<addprefixer.png, id=105, 97.36375pt x 48.18pt>
+<addprefixer.png, id=198, 97.36375pt x 48.18pt>
 File: addprefixer.png Graphic file (type png)
  <use addprefixer.png>
-Package pdftex.def Info: addprefixer.png used on input line 205.
+Package pdftex.def Info: addprefixer.png used on input line 237.
 (pdftex.def)             Requested size: 48.68175pt x 24.08992pt.
 
-<addprefixerfrom.png, id=106, 187.70125pt x 42.1575pt>
+<addprefixerfrom.png, id=199, 187.70125pt x 42.1575pt>
 File: addprefixerfrom.png Graphic file (type png)
 
 <use addprefixerfrom.png>
-Package pdftex.def Info: addprefixerfrom.png used on input line 205.
+Package pdftex.def Info: addprefixerfrom.png used on input line 237.
 (pdftex.def)             Requested size: 93.85039pt x 21.07869pt.
 
-<removeprefixers.png, id=107, 129.48375pt x 42.1575pt>
+<removeprefixers.png, id=200, 129.48375pt x 42.1575pt>
 File: removeprefixers.png Graphic file (type png)
 
 <use removeprefixers.png>
-Package pdftex.def Info: removeprefixers.png used on input line 205.
+Package pdftex.def Info: removeprefixers.png used on input line 237.
 (pdftex.def)             Requested size: 64.7417pt x 21.07869pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 216.
- [9 <./editprefixers.png (PNG copy)> <./addprefixer.png (PNG copy)> <./addprefi
-xerfrom.png (PNG copy)> <./removeprefixers.png (PNG copy)>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 216.
- (./Grafterizer.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 216.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 216.
+ [10 <./tutorial.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 248.
+ [11 <./editprefixers.png (PNG copy)> <./addprefixer.png (PNG copy)> <./addpref
+ixerfrom.png (PNG copy)> <./removeprefixers.png (PNG copy)>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 248.
+ (./DataGraft.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 248.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 248.
+Package rerunfilecheck Info: File `DataGraft.out' has not changed.
+(rerunfilecheck)             Checksum: 0D2D91873CC9CC34DB2EDC45DE8114AC;1562.
 
 
-Package rerunfilecheck Warning: File `Grafterizer.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: Checksums for `Grafterizer.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  8298FD1E33846AEF7B080708EDDEEE32;1626.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 216.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 248.
  ) 
 Here is how much of TeX's memory you used:
- 13837 strings out of 495025
- 238661 string characters out of 6181515
- 329134 words of memory out of 5000000
- 16817 multiletter control sequences out of 15000+600000
+ 13903 strings out of 495025
+ 239892 string characters out of 6181515
+ 329557 words of memory out of 5000000
+ 16874 multiletter control sequences out of 15000+600000
  7895 words of font info for 28 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 45i,7n,43p,10425b,492s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,6n,43p,10423b,502s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on Grafterizer.pdf (9 pages, 301769 bytes).
+Output written on DataGraft.pdf (11 pages, 353279 bytes).
 PDF statistics:
- 144 PDF objects out of 1000 (max. 8388607)
- 93 compressed objects within 1 object stream
- 45 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 238 PDF objects out of 1000 (max. 8388607)
+ 168 compressed objects within 2 object streams
+ 47 named destinations out of 1000 (max. 500000)
+ 317 words of extra memory for PDF output out of 10000 (max. 10000000)
 

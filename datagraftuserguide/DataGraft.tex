@@ -15,8 +15,11 @@
 
 \makeatletter
 \renewcommand\thesection{}
-\renewcommand\thesubsection{\@arabic\c@section.\@arabic\c@subsection}
+\renewcommand\thesubsection{}
+\renewcommand\thesubsubsection{}
 \makeatother
+
+
 
 %%  \setlength{\droptitle}{-10em} 
   \title{DataGraft Service for Data Publishing and Transformation: User Guide} 
@@ -33,7 +36,7 @@ This tutorial describes core functionality of the DataGraft platform and gives d
 The most demonstrable way to get an overview of what can be done with help of DataGraft platform is to explore data pages and data transformations that other users of this platform chose to share. The two terms mentioned above, \textbf{data pages} and \textbf{data transformations}, are two main concepts you work with while using DataGraft platform, therefore it may be useful to understand what each of them means in a context of the service. 
 \newline
 \newline
-\textbf{Data pages} contain cleaned and transformed data you want to publish. Each data page is stored with some metadata, including data page name, short description, keywords, describing a data page, owner, creation date and public/private property (see Figure \ref{datapagemeta}). The latter is defined by data page owner and specifies whether this data page can be explored by other users of a platform or not. 
+\textbf{Data pages} contain cleaned and transformed data you want to publish. Each data page is stored with some metadata, including data page name; short description; keywords, describing a data page; owner; creation date and public/private property (see Figure \ref{datapagemeta}). The latter is defined by data page owner and specifies whether this data page can be explored by other users of a platform or not. 
 
 
 \begin{center}
@@ -50,7 +53,8 @@ Users that have access to the data page (i.e. just owners in case of private pag
 %% SPARQL
 \newline
 \newline
-Another type of asset that users may create and share in DataGraft is \textbf{data transformation}. Before publishing data, in most cases you will need to transform the original dataset -- clean messy data, remove unnecessary information, probably add some new data fields and convert tabular data to RDF. This sequence of operations you perform on your data to convert it to desirable form is called data transformation. The greatest thing about data transformations is that you may reuse them repeatably on another datasets, share them with other users, modify existing transformations and create new transformations by extending those you or other users created and shared.
+Another type of asset that users may create and share in DataGraft is \textbf{data transformation}. Before publishing data, in most cases you will need to transform the original dataset -- clean messy data, remove unnecessary information, probably add some new data fields and convert tabular data to RDF. This sequence of operations you perform on your data to convert it to desirable form is called data transformation. The greatest thing about data transformations in DataGraft platform is that you may reuse them repeatably on another datasets, share them with other users, modify existing transformations and create new transformations by extending ones that you or other users created and shared.
+As well as data pages, data transformations are stored with some metadata. The transformation properties include transformation name, description, owner and public/private property. They are defined on a data transformation creation stage(see \ref{transform}).
 \section{User Registration}
 In order to create your own data pages and transformations through a platform, you should first sign up for DataGraft account. After registration you are automatically redirected to data page creation service, from where you may start a process of creating your first data page. This process is described in detail in section \ref{publish}.
 
@@ -75,31 +79,52 @@ After data is succesfully uploaded(this is indicated by green mark in the top ri
 	\end{enumerate}
 	\end{enumerate}
 	
-\section{Data cleaning and transformation}
+	
+Let's go through the most simple scenario by choosing the first alternative. To do this you just click {\includegraphics[scale=0.8]{createraw.png}} button. This automatically takes you to the next page where you specify data page properties(see Figure\ref{datapagemeta}). After everything is in order, you simply click {\includegraphics[scale=0.8]{createdatapage.png}}. And that's it, you have just created your very first data page. Now you (and other users in case if you defined this data page as public) have access to the data page, are able to download associated data, add more information and features to the created asset.
+
+However in most cases you still need to process your data before publishing it. In this case you should use the transformation service. By clicking {\includegraphics[scale=0.8]{createusingnewtransformation.png}} button you may start transforming your data. 
+
+\section{Data cleaning and transformation \label{transform}}
+This section explains how tabular data is transformed in DataGraft platform and gives you the best strategies for data transformation.
+
+In the basis of DataGraft data transformations there lies a Grafter DSL(Domain Specific Language), which in its turn is implemented in Clojure. Therefore, to take maximum advantage of the service, one should be acquainted with mentioned languages. However number of transformations, depending on their complexity, can be done through intuitive and user-friendly GUI without any coding.
 
 
 
 \subsection{Transformation metadata}
-In this section user defines transformation title and gives a short description of how this transformation processes given data. If user wishes to share transformation, it is possible to expose it as public. In this case other platform users will be able to explore and use given transformation.
+The first tab seen in the transformation creation window is "Metadata". Here user defines transformation title and gives a short description of how this transformation processes targeted data. If you wish to share transformation, it is possible to expose it as public. In this case other platform users will be able to explore and use given transformation.
 
 
-After describing transformation metadata user may save transformation by clicking “Save” button {\includegraphics[scale=0.8]{save.png}} in the top right corner. Transformation may be as well saved later at any moment.
+After describing metadata, you may save transformation by clicking “Save” button {\includegraphics[scale=0.8]{save.png}} in the top right corner. Transformation may be as well saved later at any moment.
 
 
 \begin{center}
 \begin{figure}[!htbp]
 \centering
-\includegraphics[height=6cm] {meta.png}
- \caption{Transformation metadata \label{meta}}
+\includegraphics[height=6cm] {transformationmeta.png}
+ \caption{Transformation properties \label{meta}}
 \end{figure}
 \end{center}
 
+\subsection{Transformation preview}
+
+After your transformation was saved, in the bottom right corner you may see this icon: {\includegraphics[scale=0.3]{open.png}}. By clicking on it you may immediately apply transformation being created to target data. This may be whether distribution already uploaded to a platform, or alternatively you may upload a new file. For the first option use button depicted as  {\includegraphics[scale=0.3]{applytoexisting.png}}, and for the second -- this one {\includegraphics[scale=0.3]{uploadnew.png}}. In this way you are able to see the instant effect of created transformation on your data in the preview area. 
+
+Preview area is located in the right part of transformation window. You can see two tabs there -- one with original data and another with changes made through transformation pipeline. Each time you modify a pipeline, the transformation is  applied to the previewed dataset immediately, so you can see the effect of each performed step. You may adjust preview settings to check and evaluate transformation steps you are creating. Thus, it is possible to hide columns and to sort visible data. The changes made through these settings are not part of transformation and affect just previewed data. However at any time you may export tabular data either as it looks in preview or in a format it has at current stage of your transformation. 
+
+\begin{center}
+\begin{figure}[!htbp]
+\centering
+\includegraphics[height=7cm] {preview.png}
+ \caption{Transformation preview \label{meta}}
+\end{figure}
+\end{center}
 \subsection{Transformation pipeline}
-The Grafterizer tool performs tabular data cleaning and transformation with help of “pipeline” concept.  To begin with, each single transformation step is defined as a pipe – a function that performs simple data conversion. The greatest fact about these functions is that they may be combined together in a such way, that output of one pipe acts as an input for another. This way of composition gives a great flexibility and allows to perform rather complex data conversions.
+Data cleaning and transformation in DataGraft platform is performed with help of a “pipeline” concept.  To begin with, each single transformation step is defined as a pipe – a function that performs simple data conversion on its input. The greatest fact about these functions is that they may be combined together in a such way, that output of one pipe acts as an input for another. Obviously, the input/output data, that travels through this pipeline is dataset being transformed. This way of composing operations gives a great flexibility and allows to perform rather complex data conversions.
 
-Each transformation starts from reading a dataset, however user do not need to include this step into the transformation pipeline, since this action is performed automatically for each transformation.
+The first implicit step of every transformation pipeline is getting the very first pipeline input. Therefore, each transformation starts from reading a dataset from uploaded file. However you do not need to include this step into your pipeline manually, since this action is performed automatically for each transformation.
 
-To add a first transformation step click the {\includegraphics[scale=0.8]{add.png}} button next to the pipeline
+To add a first transformation step click the {\includegraphics[scale=0.5]{add.png}} button next to the pipeline
 \begin{center}
 \begin{figure}[!htbp]
 \centering
@@ -108,50 +133,60 @@ To add a first transformation step click the {\includegraphics[scale=0.8]{add.pn
 \end{figure}
 \end{center}
 
-Now you can see the list of functions you may use to transform your data. Available functions are logically grouped according to the type of effect they have on a dataset. OPERATIONS ON COLUMNS add, remove or modify dataset columns, while OPERATIONS ON ROWS extract certain rows from a dataset based on row numbers or some condition that user defines. Operations "Make dataset" and "Reshape dataset" affect the entire dataset.
+Now you can see the list of functions you may use to modify uploaded dataset. Available functions are logically grouped according to the type of effect they have on data. Consequently, OPERATIONS ON COLUMNS add, remove or modify dataset columns, while OPERATIONS ON ROWS extract certain rows from a dataset based on row numbers or some condition that user defines. Operations "Make dataset" and "Reshape dataset" affect the entire dataset.
 \begin{center}
 \begin{figure}[!htbp]
 \centering
-\includegraphics[height=4cm] {functionlist.png}
+\includegraphics[height=3cm] {functionlist.png}
  \caption{List of available functions \label{meta}}
 \end{figure}
 \end{center}
 
- For each operation you can see a short documentation with simple illustrated example by clicking "show/hide documentation" button. For any pipeline function you create you may leave a short description note in the "Comment" field. This information helps you and other users of your transformation to understand operations that are performed by this particular function. If you ignore this field, the note will be created automatically based on function parameters you have specified.
+ For each operation you can see a short documentation with simple illustrated example by clicking "show/hide documentation" button. For every pipeline function you create you may leave a short description note in the "Comment" field. This information helps you and other users of your transformation to understand operations that are performed here. If you ignore this field, the note will be created automatically based on function parameters you have specified.
  
  \begin{center}
 \begin{figure}[!htbp]
 \centering
-\includegraphics[height=7cm] {pipefunccommon.png}
+\includegraphics[height=5.5cm] {pipefunccommon1.png}
  \caption{Common operations for all pipe functions \label{meta}}
 \end{figure}
 \end{center}
 
-  The sections \ref{addcolumns}-\ref{customfunction} provide you with detailed guidelines for each function usage.
+Once you have added a new function to the pipeline, it will instantly appear in the pipeline view. You are free to change function parameters any time you need it by simply clicking on correspondent function icon. To get a short information about actions performed by this function you may just hover mouse pointer over its name. In many cases function order significantly affects the transformation result. It is very simple to change this order by just dragging function icons along the pipeline. To remove a function click {\includegraphics[scale=0.5]{minus.png}} button next to the function you would like to remove.
+ 
+ The following sections provide you with detailed guidelines for each function usage.
+
+  
+\subsubsection{Make Dataset \label{makedataset}}
+As its name suggests "Make dataset" operation creates new dataset from its input. If you leave all parameter fields blank new dataset will be created from all the input columns with column names given as simple alphabetic sequence. By checking "move first row to header" option you get all the column names from the first row. First row will be removed from your dataset. You may as well specify column names you wish to see in a new dataset or fetch first n columns.
+
+
+\subsubsection{Reshape Dataset}
+Reshape dataset "melts" given dataset in a such way, that each row of new dataset represents a unique combination of variables and values for given column array. The best way to explain this function is through an example. 
 
 
 \subsubsection{Add Columns \label{addcolumns}}
 
-The "Add columns"  results in adding a new column(s) to a dataset. To add a new column you should specify column name(this one will be converted to a Clojure keyword automatically) and a value for a new column. This value will be copied into every row within dataset. You may as well populate new column with some custom value. This may be current date, dataset filename or custom Clojure code. Note that the "Expression" field is prioritized, in other words if you define both value and expression, only expression will be used to get a value for a new column.
+The "Add columns"  results in adding a new column(s) to a given dataset. To add a new column you should specify column name and a value for a new column. This value will be copied into every row within dataset. You may as well populate new column with some custom value. This may be current date, dataset filename, row index or custom Clojure code. Note that the "Expression" field is prioritized, in other words if you define both value and expression, only expression will be used to get a value for a new column.
+You are able to add as many columns as you need within one operation. To add one more column simply click 
 
  \begin{center}
 \begin{figure}[!htbp]
 \centering
-\includegraphics[height=6cm] {addcolumnf.png}
+\includegraphics[height=6cm] {addcolumnf1.png}
  \caption{Add column function \label{meta}}
 \end{figure}
 \end{center}
 
-\subsubsection{Apply Columns}
-%% TODO: merge it with mapc??
-\subsection{Columns}
-%% TODO: add option drop column from dataset
-The "Columns" function narrows given dataset to just the specified columns. You may define these columns explicitly by writing their names in "Specify column names" field or by assigning  number of columns to fetch. In second case, dataset will be narrowed to n columns with their names assigned as alphabletical sequence("A","B","C" etc.). If more than 26 columns are fetched column names will count "AA", "AB", "AC" ... "BA", "BB", "BC" etc.
+
+\subsection{Take/Drop Columns}
+
+The "Take/Drop Columns" function narrows given dataset. You may explicitly define columns you wish to see in a dataset by listing their names, get first n columns or remove unnecessary columns from a dataset. In second case, dataset will be narrowed to specified number of columns with their names assigned as alphabletical sequence("A","B","C" etc.). If more than 26 columns are fetched column names will count "AA", "AB", "AC" ... "BA", "BB", "BC" etc.
 
  \begin{center}
 \begin{figure}[!htbp]
 \centering
-\includegraphics[height=5cm] {columns.png}
+\includegraphics[height=7cm] {columns1.png}
  \caption{Columns function \label{meta}}
 \end{figure}
 \end{center}
@@ -179,15 +214,12 @@ You may as well filter dataset with help of regular expressions. By pressing {\i
 Finally, you may filter dataset by applying utility functions to columns. Note, that the result of function(or combination of functions) will be treated a true/false expression.
 
 The priority of listed option is defined as they appear - from top to down: if "Text to match" field is specified, other fields are ignored, if "Text to match" is ignored, but "Regular expression" is defined -- this one will be used to filter your dataset ignoring functions below(if specified any).
-\subsubsection{Make Dataset}
-As its name suggests "Make dataset" operation creates new dataset from its input. If you leave all parameter fields blank new dataset will be created from all the input columns with column names given as simple alphabetic sequence. By checking "move first row to header" option you get all the column names from the first row. First row will be removed from your dataset. You may as well specify column names you wish to take to dataset being created or fetch first n columns.
+
 \subsubsection{Map Columns}
 This method allows you to apply function transformation to column and put the transformed value back to the same column. Transformation is done cell by cell. In parameter list you must specify a column you wish to change and a function that will be used to perform a transformation. You may add as many column-function pairs as you need. 
 %%TODO: EITHER describe what's the difference between mapc and apply-columns OR merge these functions into one in tool
-\subsubsection{Reshape Dataset}
-Reshape dataset "melts" given dataset in a such way, that each row of new dataset represents a unique combination of variables and values for given column array.
-\subsubsection{Remove Columns}
-This operation allows you to narrow dataset to all but specified columns.
+
+
 \subsubsection{Rename Columns}
 This operation allows you to rename columns in dataset. To get new names for columns you may either apply function(or function pipeline) to current column names or assign mapping from old to new column names directly.
 \subsubsection{Split Column}
@@ -207,7 +239,7 @@ You may create and edit prefixers in the "Edit prefixers" window. To see this pr
 
 \begin{mdframed}[hidealllines=true,backgroundcolor=gray!10]
 \textbf{Example 1.}
-The following example illustrates ...
+Here is given a small example, that illustrates how you can transform your data starting from the point where you upload raw csv data and up to the moment where you get the result in desired RDF format.
 \end{mdframed}
 
 
