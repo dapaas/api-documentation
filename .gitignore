@@ -1,8 +1,10 @@
-grafterizer/.swp
+datagraftuserguide/.swp
 .odg
 .odt
-grafterizer/.cls
-grafterizer/.mdf
-grafterizer/mdframed*
-grafterizer/.sty
+datagraftuserguide/.cls
+datagraftuserguide/.mdf
+datagraftuserguide/xcolor*
+datagraftuserguide/ams*
+datagraftuserguide/mdframed*
+datagraftuserguide/.sty
 .sass-cache

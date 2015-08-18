@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.7.21)  17 AUG 2015 18:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.7.21)  18 AUG 2015 13:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -361,6 +361,18 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip43
 )
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks17
+\thm@bodyfont=\toks18
+\thm@headfont=\toks19
+\thm@notefont=\toks20
+\thm@headpunct=\toks21
+\thm@preskip=\skip44
+\thm@postskip=\skip45
+\thm@headsep=\skip46
+\dth@everypar=\toks22
+)
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2014/03/24 3.9k The Babel package
 
@@ -551,7 +563,7 @@ Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
 \csq@qlevel=\count103
 \csq@maxlvl=\count104
 \csq@tshold=\count105
-\csq@ltx@everypar=\toks17
+\csq@ltx@everypar=\toks23
 
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2011/10/22 v5.1d csquotes generic definitions
@@ -683,12 +695,12 @@ Package: l3skip 2013/07/28 v4581 L3 Dimensions and skips
 \l_tmpb_dim=\dimen113
 \g_tmpa_dim=\dimen114
 \g_tmpb_dim=\dimen115
-\c_zero_skip=\skip44
-\c_max_skip=\skip45
-\l_tmpa_skip=\skip46
-\l_tmpb_skip=\skip47
-\g_tmpa_skip=\skip48
-\g_tmpb_skip=\skip49
+\c_zero_skip=\skip47
+\c_max_skip=\skip48
+\l_tmpa_skip=\skip49
+\l_tmpb_skip=\skip50
+\g_tmpa_skip=\skip51
+\g_tmpb_skip=\skip52
 \c_zero_muskip=\muskip11
 \c_max_muskip=\muskip12
 \l_tmpa_muskip=\muskip13
@@ -792,47 +804,47 @@ Package zref Info: New property: abspage on input line 62.
 (./needspace.sty
 Package: needspace 2003/02/18 v1.3a reserve vertical space
 )
-\mdf@templength=\skip50
+\mdf@templength=\skip53
 \c@mdf@globalstyle@cnt=\count137
-\mdf@skipabove@length=\skip51
-\mdf@skipbelow@length=\skip52
-\mdf@leftmargin@length=\skip53
-\mdf@rightmargin@length=\skip54
-\mdf@innerleftmargin@length=\skip55
-\mdf@innerrightmargin@length=\skip56
-\mdf@innertopmargin@length=\skip57
-\mdf@innerbottommargin@length=\skip58
-\mdf@splittopskip@length=\skip59
-\mdf@splitbottomskip@length=\skip60
-\mdf@outermargin@length=\skip61
-\mdf@innermargin@length=\skip62
-\mdf@linewidth@length=\skip63
-\mdf@innerlinewidth@length=\skip64
-\mdf@middlelinewidth@length=\skip65
-\mdf@outerlinewidth@length=\skip66
-\mdf@roundcorner@length=\skip67
-\mdf@footenotedistance@length=\skip68
-\mdf@userdefinedwidth@length=\skip69
-\mdf@needspace@length=\skip70
-\mdf@frametitleaboveskip@length=\skip71
-\mdf@frametitlebelowskip@length=\skip72
-\mdf@frametitlerulewidth@length=\skip73
-\mdf@frametitleleftmargin@length=\skip74
-\mdf@frametitlerightmargin@length=\skip75
-\mdf@shadowsize@length=\skip76
-\mdf@extratopheight@length=\skip77
-\mdf@subtitleabovelinewidth@length=\skip78
-\mdf@subtitlebelowlinewidth@length=\skip79
-\mdf@subtitleaboveskip@length=\skip80
-\mdf@subtitlebelowskip@length=\skip81
-\mdf@subtitleinneraboveskip@length=\skip82
-\mdf@subtitleinnerbelowskip@length=\skip83
-\mdf@subsubtitleabovelinewidth@length=\skip84
-\mdf@subsubtitlebelowlinewidth@length=\skip85
-\mdf@subsubtitleaboveskip@length=\skip86
-\mdf@subsubtitlebelowskip@length=\skip87
-\mdf@subsubtitleinneraboveskip@length=\skip88
-\mdf@subsubtitleinnerbelowskip@length=\skip89
+\mdf@skipabove@length=\skip54
+\mdf@skipbelow@length=\skip55
+\mdf@leftmargin@length=\skip56
+\mdf@rightmargin@length=\skip57
+\mdf@innerleftmargin@length=\skip58
+\mdf@innerrightmargin@length=\skip59
+\mdf@innertopmargin@length=\skip60
+\mdf@innerbottommargin@length=\skip61
+\mdf@splittopskip@length=\skip62
+\mdf@splitbottomskip@length=\skip63
+\mdf@outermargin@length=\skip64
+\mdf@innermargin@length=\skip65
+\mdf@linewidth@length=\skip66
+\mdf@innerlinewidth@length=\skip67
+\mdf@middlelinewidth@length=\skip68
+\mdf@outerlinewidth@length=\skip69
+\mdf@roundcorner@length=\skip70
+\mdf@footenotedistance@length=\skip71
+\mdf@userdefinedwidth@length=\skip72
+\mdf@needspace@length=\skip73
+\mdf@frametitleaboveskip@length=\skip74
+\mdf@frametitlebelowskip@length=\skip75
+\mdf@frametitlerulewidth@length=\skip76
+\mdf@frametitleleftmargin@length=\skip77
+\mdf@frametitlerightmargin@length=\skip78
+\mdf@shadowsize@length=\skip79
+\mdf@extratopheight@length=\skip80
+\mdf@subtitleabovelinewidth@length=\skip81
+\mdf@subtitlebelowlinewidth@length=\skip82
+\mdf@subtitleaboveskip@length=\skip83
+\mdf@subtitlebelowskip@length=\skip84
+\mdf@subtitleinneraboveskip@length=\skip85
+\mdf@subtitleinnerbelowskip@length=\skip86
+\mdf@subsubtitleabovelinewidth@length=\skip87
+\mdf@subsubtitlebelowlinewidth@length=\skip88
+\mdf@subsubtitleaboveskip@length=\skip89
+\mdf@subsubtitlebelowskip@length=\skip90
+\mdf@subsubtitleinneraboveskip@length=\skip91
+\mdf@subsubtitleinnerbelowskip@length=\skip92
  (./md-frame-0.mdf
 File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 )
@@ -841,33 +853,33 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 \mdf@splitbox@one=\box43
 \mdf@splitbox@two=\box44
 \mdf@splitbox@save=\box45
-\mdfsplitboxwidth=\skip90
-\mdfsplitboxtotalwidth=\skip91
-\mdfsplitboxheight=\skip92
-\mdfsplitboxdepth=\skip93
-\mdfsplitboxtotalheight=\skip94
-\mdfframetitleboxwidth=\skip95
-\mdfframetitleboxtotalwidth=\skip96
-\mdfframetitleboxheight=\skip97
-\mdfframetitleboxdepth=\skip98
-\mdfframetitleboxtotalheight=\skip99
-\mdffootnoteboxwidth=\skip100
-\mdffootnoteboxtotalwidth=\skip101
-\mdffootnoteboxheight=\skip102
-\mdffootnoteboxdepth=\skip103
-\mdffootnoteboxtotalheight=\skip104
-\mdftotallinewidth=\skip105
-\mdfboundingboxwidth=\skip106
-\mdfboundingboxtotalwidth=\skip107
-\mdfboundingboxheight=\skip108
-\mdfboundingboxdepth=\skip109
-\mdfboundingboxtotalheight=\skip110
-\mdf@freevspace@length=\skip111
-\mdf@horizontalwidthofbox@length=\skip112
-\mdf@verticalmarginwhole@length=\skip113
-\mdf@horizontalspaceofbox=\skip114
-\mdfsubtitleheight=\skip115
-\mdfsubsubtitleheight=\skip116
+\mdfsplitboxwidth=\skip93
+\mdfsplitboxtotalwidth=\skip94
+\mdfsplitboxheight=\skip95
+\mdfsplitboxdepth=\skip96
+\mdfsplitboxtotalheight=\skip97
+\mdfframetitleboxwidth=\skip98
+\mdfframetitleboxtotalwidth=\skip99
+\mdfframetitleboxheight=\skip100
+\mdfframetitleboxdepth=\skip101
+\mdfframetitleboxtotalheight=\skip102
+\mdffootnoteboxwidth=\skip103
+\mdffootnoteboxtotalwidth=\skip104
+\mdffootnoteboxheight=\skip105
+\mdffootnoteboxdepth=\skip106
+\mdffootnoteboxtotalheight=\skip107
+\mdftotallinewidth=\skip108
+\mdfboundingboxwidth=\skip109
+\mdfboundingboxtotalwidth=\skip110
+\mdfboundingboxheight=\skip111
+\mdfboundingboxdepth=\skip112
+\mdfboundingboxtotalheight=\skip113
+\mdf@freevspace@length=\skip114
+\mdf@horizontalwidthofbox@length=\skip115
+\mdf@verticalmarginwhole@length=\skip116
+\mdf@horizontalspaceofbox=\skip117
+\mdfsubtitleheight=\skip118
+\mdfsubsubtitleheight=\skip119
 \c@mdfcountframes=\count138
 
 ****** mdframed patching \endmdf@trivlist
@@ -892,6 +904,7 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 \c@mdf@zref@counter=\count142
 Package zref Info: New property: mdf@pagevalue on input line 894.
 )
+\c@example=\count143
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
@@ -919,33 +932,42 @@ LaTeX Warning: Label `meta' multiply defined.
 LaTeX Warning: Label `meta' multiply defined.
 
 
+LaTeX Warning: Label `meta' multiply defined.
+
+
 LaTeX Warning: Label `customFunc' multiply defined.
+
+
+LaTeX Warning: Label `customFunc' multiply defined.
+
+
+LaTeX Warning: Label `customfunction' multiply defined.
 
 )
 \openout1 = `DataGraft.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 44.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 44.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    ... okay on input line 44.
 \AtBeginShipoutBox=\box46
-Package hyperref Info: Link coloring OFF on input line 30.
+Package hyperref Info: Link coloring OFF on input line 44.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -953,11 +975,11 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count143
+\c@section@level=\count144
 )
-LaTeX Info: Redefining \ref on input line 30.
-LaTeX Info: Redefining \pageref on input line 30.
-LaTeX Info: Redefining \nameref on input line 30.
+LaTeX Info: Redefining \ref on input line 44.
+LaTeX Info: Redefining \pageref on input line 44.
+LaTeX Info: Redefining \nameref on input line 44.
 
 (./DataGraft.out) (./DataGraft.out)
 \@outlinefile=\write3
@@ -966,17 +988,17 @@ LaTeX Info: Redefining \nameref on input line 30.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count144
+\scratchcounter=\count145
 \scratchdimen=\dimen141
 \scratchbox=\box47
-\nofMPsegments=\count145
-\nofMParguments=\count146
-\everyMPshowfont=\toks18
-\MPscratchCnt=\count147
+\nofMPsegments=\count146
+\nofMParguments=\count147
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count148
 \MPscratchDim=\dimen142
-\MPnumerator=\count148
-\makeMPintoPDFobject=\count149
-\everyMPtoPDFconversion=\toks19
+\MPnumerator=\count149
+\makeMPintoPDFobject=\count150
+\everyMPtoPDFconversion=\toks25
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -993,261 +1015,379 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 31.
+(Font)              <12> on input line 45.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 31.
+(Font)              <8> on input line 45.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 31.
+(Font)              <6> on input line 45.
 
 
 LaTeX Warning: No \author given.
 
+(./DataGraft.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--40
-
+Overfull \hbox (1.54234pt too wide) in paragraph at lines 24--24
+ [][] [][]\OT1/cmr/m/n/10 Creating String Trans-for-ma-tion Func-tions through 
+Graph- 
  []
 
-<datapagemeta.png, id=93, 808.52063pt x 264.23718pt>
+)
+\tf@toc=\write4
+\openout4 = `DataGraft.toc'.
+
+ [1
+
+{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}]
+<datapagemeta.png, id=141, 808.52063pt x 264.23718pt>
 File: datapagemeta.png Graphic file (type png)
  <use datapagemeta.png>
-Package pdftex.def Info: datapagemeta.png used on input line 45.
+Package pdftex.def Info: datapagemeta.png used on input line 60.
 (pdftex.def)             Requested size: 348.23694pt x 113.81102pt.
 
-Overfull \hbox (3.23694pt too wide) in paragraph at lines 45--46
+Overfull \hbox (3.23694pt too wide) in paragraph at lines 60--61
  [][] 
  []
 
-<exportraw.png, id=95, 72.27pt x 15.80907pt>
+<exportraw.png, id=143, 72.27pt x 15.80907pt>
 File: exportraw.png Graphic file (type png)
  <use exportraw.png>
-Package pdftex.def Info: exportraw.png used on input line 50.
+Package pdftex.def Info: exportraw.png used on input line 65.
 (pdftex.def)             Requested size: 57.81606pt x 12.64725pt.
 
-<exportrdf.png, id=96, 69.25874pt x 15.80907pt>
+<exportrdf.png, id=144, 69.25874pt x 15.80907pt>
 File: exportrdf.png Graphic file (type png)
  <use exportrdf.png>
-Package pdftex.def Info: exportrdf.png used on input line 50.
+Package pdftex.def Info: exportrdf.png used on input line 65.
 (pdftex.def)             Requested size: 55.40706pt x 12.64725pt.
 
 
-Package hyperref Warning: Suppressing empty link on input line 57.
+Package hyperref Warning: Suppressing empty link on input line 71.
 
+[2 <./datapagemeta.png> <./exportraw.png> <./exportrdf.png>]
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--58
+Package hyperref Warning: Suppressing empty link on input line 73.
 
- []
-
-[1
-
-{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map} <./datapagem
-eta.png>]
-
-Package hyperref Warning: Suppressing empty link on input line 59.
-
-<publish.png, id=108, 42.1575pt x 17.31468pt>
+<publish.png, id=153, 42.1575pt x 17.31468pt>
 File: publish.png Graphic file (type png)
  <use publish.png>
-Package pdftex.def Info: publish.png used on input line 64.
+Package pdftex.def Info: publish.png used on input line 78.
 (pdftex.def)             Requested size: 33.72603pt x 13.85175pt.
 
-<upload.png, id=109, 880.03781pt x 323.70938pt>
+<upload.png, id=154, 880.03781pt x 323.70938pt>
 File: upload.png Graphic file (type png)
  <use upload.png>
-Package pdftex.def Info: upload.png used on input line 68.
+Package pdftex.def Info: upload.png used on input line 82.
 (pdftex.def)             Requested size: 348.08783pt x 128.0374pt.
 
-Overfull \hbox (3.08783pt too wide) in paragraph at lines 68--69
+Overfull \hbox (3.08783pt too wide) in paragraph at lines 82--83
  [][] 
  []
 
-[2 <./exportraw.png> <./exportrdf.png> <./publish.png (PNG copy)>]
-<createraw.png, id=116, 68.50594pt x 15.05624pt>
+[3 <./publish.png (PNG copy)>]
+<createraw.png, id=160, 68.50594pt x 15.05624pt>
 File: createraw.png Graphic file (type png)
  <use createraw.png>
-Package pdftex.def Info: createraw.png used on input line 83.
+Package pdftex.def Info: createraw.png used on input line 97.
 (pdftex.def)             Requested size: 54.80481pt x 12.045pt.
 
-<createdatapage.png, id=118, 103.88812pt x 15.05624pt>
+<createdatapage.png, id=162, 103.88812pt x 15.05624pt>
 File: createdatapage.png Graphic file (type png)
 
 <use createdatapage.png>
-Package pdftex.def Info: createdatapage.png used on input line 83.
+Package pdftex.def Info: createdatapage.png used on input line 97.
 (pdftex.def)             Requested size: 83.1106pt x 12.045pt.
 
-<createusingnewtransformation.png, id=119, 219.06844pt x 18.82031pt>
+<createusingnewtransformation.png, id=163, 219.06844pt x 18.82031pt>
 File: createusingnewtransformation.png Graphic file (type png)
 
 <use createusingnewtransformation.png>
-Package pdftex.def Info: createusingnewtransformation.png used on input line 85
+Package pdftex.def Info: createusingnewtransformation.png used on input line 99
 .
 (pdftex.def)             Requested size: 175.25497pt x 15.05624pt.
 
-Overfull \hbox (11.13953pt too wide) in paragraph at lines 90--91
+
+Package hyperref Warning: Suppressing empty link on input line 99.
+
+
+Overfull \hbox (11.13953pt too wide) in paragraph at lines 106--107
 []\OT1/cmr/m/n/10 In the ba-sis of Data-Graft data trans-for-ma-tions there lie
 s a Grafter DSL(Domain
  []
 
-[3 <./upload.png> <./createraw.png> <./createdatapage.png> <./createusingnewtra
-nsformation.png>] <save.png, id=133, 28.60687pt x 27.10126pt>
+[4 <./upload.png> <./createraw.png> <./createdatapage.png> <./createusingnewtra
+nsformation.png>] <save.png, id=177, 28.60687pt x 27.10126pt>
 File: save.png Graphic file (type png)
  <use save.png>
-Package pdftex.def Info: save.png used on input line 98.
+Package pdftex.def Info: save.png used on input line 114.
 (pdftex.def)             Requested size: 22.88551pt x 21.68102pt.
 
-<transformationmeta.png, id=134, 614.295pt x 361.35pt>
+<transformationmeta.png, id=178, 614.295pt x 361.35pt>
 File: transformationmeta.png Graphic file (type png)
 
 <use transformationmeta.png>
-Package pdftex.def Info: transformationmeta.png used on input line 104.
+Package pdftex.def Info: transformationmeta.png used on input line 120.
 (pdftex.def)             Requested size: 290.21841pt x 170.71652pt.
- <open.png, id=135, 51.19125pt x 48.18pt>
+ <open.png, id=179, 51.19125pt x 48.18pt>
 File: open.png Graphic file (type png)
 
 <use open.png>
-Package pdftex.def Info: open.png used on input line 111.
+Package pdftex.def Info: open.png used on input line 127.
 (pdftex.def)             Requested size: 15.35748pt x 14.4541pt.
- <applytoexisting.png, id=136, 50.1875pt x 47.17625pt>
+ <applytoexisting.png, id=180, 50.1875pt x 47.17625pt>
 File: applytoexisting.png Graphic file (type png)
 
 <use applytoexisting.png>
-Package pdftex.def Info: applytoexisting.png used on input line 111.
+Package pdftex.def Info: applytoexisting.png used on input line 127.
 (pdftex.def)             Requested size: 15.05635pt x 14.15297pt.
- <uploadnew.png, id=137, 47.17625pt x 46.1725pt>
+ <uploadnew.png, id=181, 47.17625pt x 46.1725pt>
 File: uploadnew.png Graphic file (type png)
 
 <use uploadnew.png>
-Package pdftex.def Info: uploadnew.png used on input line 111.
+Package pdftex.def Info: uploadnew.png used on input line 127.
 (pdftex.def)             Requested size: 14.15297pt x 13.85184pt.
- [4 <./save.png> <./transformationmeta.png> <./open.png> <./applytoexisting.png
+ [5 <./save.png> <./transformationmeta.png> <./open.png> <./applytoexisting.png
 > <./uploadnew.png>]
-<preview.png, id=148, 621.82312pt x 452.4403pt>
+<preview.png, id=192, 621.82312pt x 452.4403pt>
 File: preview.png Graphic file (type png)
  <use preview.png>
-Package pdftex.def Info: preview.png used on input line 118.
+Package pdftex.def Info: preview.png used on input line 134.
 (pdftex.def)             Requested size: 273.72636pt x 199.16928pt.
- [5 <./preview.png>] <add.png, id=155, 21.07875pt x 23.33719pt>
+
+<add.png, id=193, 21.07875pt x 23.33719pt>
 File: add.png Graphic file (type png)
  <use add.png>
-Package pdftex.def Info: add.png used on input line 127.
+Package pdftex.def Info: add.png used on input line 143.
 (pdftex.def)             Requested size: 10.53934pt x 11.66855pt.
 
-<addpipefunction.png, id=156, 112.92188pt x 93.34875pt>
+<addpipefunction.png, id=194, 112.92188pt x 93.34875pt>
 File: addpipefunction.png Graphic file (type png)
 
 <use addpipefunction.png>
-Package pdftex.def Info: addpipefunction.png used on input line 131.
+Package pdftex.def Info: addpipefunction.png used on input line 147.
 (pdftex.def)             Requested size: 68.83743pt x 56.9055pt.
-
-<functionlist.png, id=157, 718.93594pt x 196.48407pt>
+ [6 <./preview.png> <./add.png>]
+<functionlist.png, id=202, 718.93594pt x 196.48407pt>
 File: functionlist.png Graphic file (type png)
  <use functionlist.png>
-Package pdftex.def Info: functionlist.png used on input line 140.
+Package pdftex.def Info: functionlist.png used on input line 156.
 (pdftex.def)             Requested size: 312.32872pt x 85.35826pt.
 
-<pipefunccommon1.png, id=158, 614.295pt x 361.35pt>
+<pipefunccommon1.png, id=203, 614.295pt x 361.35pt>
 File: pipefunccommon1.png Graphic file (type png)
  <use pipefunccommon1.png>
-Package pdftex.def Info: pipefunccommon1.png used on input line 150.
+Package pdftex.def Info: pipefunccommon1.png used on input line 166.
 (pdftex.def)             Requested size: 266.03511pt x 156.49014pt.
 
-<minus.png, id=159, 19.57312pt x 18.0675pt>
+<minus.png, id=204, 19.57312pt x 18.0675pt>
 File: minus.png Graphic file (type png)
  <use minus.png>
-Package pdftex.def Info: minus.png used on input line 155.
+Package pdftex.def Info: minus.png used on input line 171.
 (pdftex.def)             Requested size: 9.78653pt x 9.03372pt.
- [6 <./add.png> <./addpipefunction.png> <./functionlist.png>] [7 <./pipefunccom
-mon1.png> <./minus.png>] <addcolumnf1.png, id=177, 614.295pt x 361.35pt>
+ [7 <./addpipefunction.png> <./functionlist.png> <./minus.png>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 183.
+
+<bulb.png, id=215, 29.35968pt x 21.83156pt>
+File: bulb.png Graphic file (type png)
+ <use bulb.png>
+Package pdftex.def Info: bulb.png used on input line 185.
+(pdftex.def)             Requested size: 11.74365pt x 8.73245pt.
+
+<ex1_1.png, id=217, 766.36313pt x 54.2025pt>
+File: ex1_1.png Graphic file (type png)
+ <use ex1_1.png>
+Package pdftex.def Info: ex1_1.png used on input line 196.
+(pdftex.def)             Requested size: 402.28821pt x 28.45274pt.
+
+Overfull \hbox (57.28821pt too wide) in paragraph at lines 196--197
+ [][] 
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 201.
+[8 <./pipefunccommon1.png> <./bulb.png> <./ex1_1.png>]
+Package mdframed Info: Not enough space on this page on input line 203.
+
+<ex1_4.png, id=228, 614.295pt x 664.73344pt>
+File: ex1_4.png Graphic file (type png)
+ <use ex1_4.png>
+Package pdftex.def Info: ex1_4.png used on input line 208.
+(pdftex.def)             Requested size: 262.9419pt x 284.52756pt.
+
+<addcolumnf1.png, id=229, 614.295pt x 361.35pt>
 File: addcolumnf1.png Graphic file (type png)
  <use addcolumnf1.png>
-Package pdftex.def Info: addcolumnf1.png used on input line 176.
+Package pdftex.def Info: addcolumnf1.png used on input line 227.
 (pdftex.def)             Requested size: 290.21841pt x 170.71652pt.
-
-<columns1.png, id=178, 614.295pt x 361.35pt>
+ [9 <./ex1_4.png>] <columns1.png, id=236, 614.295pt x 361.35pt>
 File: columns1.png Graphic file (type png)
  <use columns1.png>
-Package pdftex.def Info: columns1.png used on input line 189.
+Package pdftex.def Info: columns1.png used on input line 240.
 (pdftex.def)             Requested size: 338.58504pt x 199.16928pt.
 
 
-Package hyperref Warning: Suppressing empty link on input line 196.
+Package hyperref Warning: Suppressing empty link on input line 249.
 
-<compose.png, id=179, 83.5622pt x 32.37094pt>
+<plus.png, id=237, 12.7978pt x 11.29219pt>
+File: plus.png Graphic file (type png)
+ <use plus.png>
+Package pdftex.def Info: plus.png used on input line 251.
+(pdftex.def)             Requested size: 7.67873pt x 6.77534pt.
+ [10 <./addcolumnf1.png>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 252.
+ <magic.png, id=244, 31.61812pt x 22.58438pt>
+File: magic.png Graphic file (type png)
+ <use magic.png>
+Package pdftex.def Info: magic.png used on input line 253.
+(pdftex.def)             Requested size: 12.647pt x 9.03357pt.
+
+<compose.png, id=245, 83.5622pt x 32.37094pt>
 File: compose.png Graphic file (type png)
  <use compose.png>
-Package pdftex.def Info: compose.png used on input line 198.
-(pdftex.def)             Requested size: 41.78099pt x 16.18542pt.
+Package pdftex.def Info: compose.png used on input line 256.
+(pdftex.def)             Requested size: 33.42427pt x 12.94814pt.
 
-<trash.png, id=180, 21.07875pt x 15.80907pt>
+<trash.png, id=246, 21.07875pt x 15.80907pt>
 File: trash.png Graphic file (type png)
  <use trash.png>
-Package pdftex.def Info: trash.png used on input line 198.
-(pdftex.def)             Requested size: 16.86299pt x 12.64725pt.
-Package mdframed Info: Not enough space on this page on input line 199.
- [8 <./addcolumnf1.png>]
-Package mdframed Info: Not enough space on this page on input line 199.
- <tutorial.png, id=187, 24.09pt x 24.09pt>
+Package pdftex.def Info: trash.png used on input line 256.
+(pdftex.def)             Requested size: 12.64732pt x 9.48549pt.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 262.
+File: magic.png Graphic file (type png)
+ <use magic.png>
+Package pdftex.def Info: magic.png used on input line 263.
+(pdftex.def)             Requested size: 12.647pt x 9.03357pt.
+
+[11 <./columns1.png> <./plus.png> <./magic.png> <./compose.png> <./trash.png>]
+<renamecolumns1.png, id=257, 614.295pt x 361.35pt>
+File: renamecolumns1.png Graphic file (type png)
+ <use renamecolumns1.png>
+Package pdftex.def Info: renamecolumns1.png used on input line 277.
+(pdftex.def)             Requested size: 338.58504pt x 199.16928pt.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 282.
+File: magic.png Graphic file (type png)
+
+<use magic.png>
+Package pdftex.def Info: magic.png used on input line 283.
+(pdftex.def)             Requested size: 12.647pt x 9.03357pt.
+ [12 <./renamecolumns1.png>]
+<tutorial.png, id=264, 24.09pt x 24.09pt>
 File: tutorial.png Graphic file (type png)
  <use tutorial.png>
-Package pdftex.def Info: tutorial.png used on input line 212.
+Package pdftex.def Info: tutorial.png used on input line 304.
 (pdftex.def)             Requested size: 14.45409pt x 14.45409pt.
- [9 <./columns1.png> <./compose.png> <./trash.png>]
-<editprefixers.png, id=197, 110.4125pt x 36.135pt>
+
+<editutility.png, id=265, 109.1578pt x 15.05624pt>
+File: editutility.png Graphic file (type png)
+ <use editutility.png>
+Package pdftex.def Info: editutility.png used on input line 315.
+(pdftex.def)             Requested size: 54.57877pt x 7.52809pt.
+
+<createcustom.png, id=266, 643.6547pt x 377.15906pt>
+File: createcustom.png Graphic file (type png)
+ <use createcustom.png>
+Package pdftex.def Info: createcustom.png used on input line 320.
+(pdftex.def)             Requested size: 339.89787pt x 199.16928pt.
+
+<removefun.png, id=267, 14.30344pt x 11.29219pt>
+File: removefun.png Graphic file (type png)
+ <use removefun.png>
+Package pdftex.def Info: removefun.png used on input line 325.
+(pdftex.def)             Requested size: 7.15169pt x 5.64607pt.
+ [13 <./tutorial.png> <./editutility.png>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 330.
+File: magic.png Graphic file (type png)
+ <use magic.png>
+Package pdftex.def Info: magic.png used on input line 331.
+(pdftex.def)             Requested size: 12.647pt x 9.03357pt.
+
+<createstring.png, id=275, 12.7978pt x 11.29219pt>
+File: createstring.png Graphic file (type png)
+ <use createstring.png>
+Package pdftex.def Info: createstring.png used on input line 341.
+(pdftex.def)             Requested size: 6.39888pt x 5.64607pt.
+
+<createstringwin.png, id=277, 651.18282pt x 378.66469pt>
+File: createstringwin.png Graphic file (type png)
+
+<use createstringwin.png>
+Package pdftex.def Info: createstringwin.png used on input line 346.
+(pdftex.def)             Requested size: 342.51202pt x 199.16928pt.
+ <editprefixers.png, id=278, 110.4125pt x 36.135pt>
 File: editprefixers.png Graphic file (type png)
- <use editprefixers.png>
-Package pdftex.def Info: editprefixers.png used on input line 237.
+
+<use editprefixers.png>
+Package pdftex.def Info: editprefixers.png used on input line 354.
 (pdftex.def)             Requested size: 55.2061pt x 18.06744pt.
-
-<addprefixer.png, id=198, 97.36375pt x 48.18pt>
+ <addprefixer.png, id=279, 97.36375pt x 48.18pt>
 File: addprefixer.png Graphic file (type png)
- <use addprefixer.png>
-Package pdftex.def Info: addprefixer.png used on input line 237.
-(pdftex.def)             Requested size: 48.68175pt x 24.08992pt.
 
-<addprefixerfrom.png, id=199, 187.70125pt x 42.1575pt>
+<use addprefixer.png>
+Package pdftex.def Info: addprefixer.png used on input line 354.
+(pdftex.def)             Requested size: 48.68175pt x 24.08992pt.
+ <addprefixerfrom.png, id=280, 187.70125pt x 42.1575pt>
 File: addprefixerfrom.png Graphic file (type png)
 
 <use addprefixerfrom.png>
-Package pdftex.def Info: addprefixerfrom.png used on input line 237.
+Package pdftex.def Info: addprefixerfrom.png used on input line 354.
 (pdftex.def)             Requested size: 93.85039pt x 21.07869pt.
 
-<removeprefixers.png, id=200, 129.48375pt x 42.1575pt>
+<removeprefixers.png, id=281, 129.48375pt x 42.1575pt>
 File: removeprefixers.png Graphic file (type png)
 
 <use removeprefixers.png>
-Package pdftex.def Info: removeprefixers.png used on input line 237.
+Package pdftex.def Info: removeprefixers.png used on input line 354.
 (pdftex.def)             Requested size: 64.7417pt x 21.07869pt.
- [10 <./tutorial.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 248.
- [11 <./editprefixers.png (PNG copy)> <./addprefixer.png (PNG copy)> <./addpref
-ixerfrom.png (PNG copy)> <./removeprefixers.png (PNG copy)>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 248.
+ [14 <./createcustom.png> <./removefun.png> <./createstring.png>] [15 <./create
+stringwin.png> <./editprefixers.png (PNG copy)> <./addprefixer.png (PNG copy)> 
+<./addprefixerfrom.png (PNG copy)> <./removeprefixers.png (PNG copy)>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 365.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 373.
+ [16]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 373.
  (./DataGraft.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 248.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 248.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 373.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 373.
 Package rerunfilecheck Info: File `DataGraft.out' has not changed.
-(rerunfilecheck)             Checksum: 0D2D91873CC9CC34DB2EDC45DE8114AC;1562.
+(rerunfilecheck)             Checksum: 6EDD2EF1FCEBFDDB927680365227DA5A;1838.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 248.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 373.
  ) 
 Here is how much of TeX's memory you used:
- 13903 strings out of 495025
- 239892 string characters out of 6181515
- 329557 words of memory out of 5000000
- 16874 multiletter control sequences out of 15000+600000
+ 14066 strings out of 495025
+ 242034 string characters out of 6181515
+ 332126 words of memory out of 5000000
+ 17006 multiletter control sequences out of 15000+600000
  7895 words of font info for 28 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 45i,6n,43p,10423b,502s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,6n,45p,10423b,538s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on DataGraft.pdf (11 pages, 353279 bytes).
+Output written on DataGraft.pdf (16 pages, 513576 bytes).
 PDF statistics:
- 238 PDF objects out of 1000 (max. 8388607)
- 168 compressed objects within 2 object streams
- 47 named destinations out of 1000 (max. 500000)
- 317 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 332 PDF objects out of 1000 (max. 8388607)
+ 234 compressed objects within 3 object streams
+ 61 named destinations out of 1000 (max. 500000)
+ 396 words of extra memory for PDF output out of 10000 (max. 10000000)
 
