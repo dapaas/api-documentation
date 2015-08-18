@@ -63,12 +63,14 @@ Data pages contain cleaned and transformed data you want to publish. Each data p
 \end{center}
 
 Users that have access to the data page (i.e. just owners in case of private pages and everyone else for public pages) can locally download information associated with a data page in a raw tabular format by pressing {\includegraphics[scale=0.8]{exportraw.png}} button; or as RDF by pressing {\includegraphics[scale=0.8]{exportrdf.png}}. The list of supported RDF formats includes RDF/XML(.rdf), n-triple(.nt), turtle(.ttl), n3(.n3), nquads(.nq), RDF/JSON(.rj).
-  \colorbox{yellow}{View portal, SPARQL} 
+  
 %% View portal
 %% SPARQL
 \subsection{Data transformations}
 Another type of asset that users may create and share in DataGraft is data transformation. Before publishing data, in most cases you will need to transform the original dataset -- clean messy data, remove unnecessary information, probably add some new data fields and convert tabular data to RDF. This sequence of operations you perform on your data to convert it to desirable form is called data transformation. The greatest thing about data transformations in DataGraft platform is that you may reuse them repeatably on another datasets, share them with other users, modify existing transformations and create new transformations by extending ones that you or other users created and shared.
 As well as data pages, data transformations are stored with some metadata. The transformation properties include transformation name, description, owner and public/private property. They are defined on a data transformation creation stage(see \ref{transform}).
+
+To explore data pages and data transformations created by other users go to the "Explore" tab. Here you can see a list of public assets. 
 \section{User Registration}
 In order to create your own data pages and transformations through a platform, you should first sign up for DataGraft account. After registration you are automatically redirected to data page creation service, from where you may start a process of creating your first data page. This process is described in detail in section \ref{publish}.
 
@@ -362,10 +364,10 @@ The first step here  would be to specify base graph URI. To create and edit pref
 
 
 
-\begin{mdframed}[hidealllines=true,backgroundcolor=gray!10]
-\textbf{Example 1.}
-Here is given a small example, that illustrates how you can transform your data starting from the point where you upload raw csv data and up to the moment where you get the result in desired RDF format.
-\end{mdframed}
+%%\begin{mdframed}[hidealllines=true,backgroundcolor=gray!10]
+%%\textbf{Example 1.}
+%%Here is given a small example, that illustrates how you can transform your data starting from the point where you upload raw csv data and up to the moment where you get the result in desired RDF format.
+%%\end{mdframed}
 
 
 
